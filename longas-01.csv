@@ -1,0 +1,11 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+CC:B2:55:DF:1D:DD, 2013-12-09 22:16:24, 2013-12-09 22:16:28, 11,  54, WEP , WEP,   , -77,        2,        0,   0.  0.  0.  0,   8, lanaijun, 
+1C:FA:68:2D:A3:CA, 2013-12-09 22:16:19, 2013-12-09 22:16:38, 11,  54, WPA2WPA , CCMP,PSK, -66,      183,      169,   0.  0.  0.  0,  14, TP-LINK_2DA3CA, 
+A4:99:47:5F:FE:24, 2013-12-09 22:16:19, 2013-12-09 22:16:38, 11,  54, WPA2, CCMP,PSK, -50,      167,       12,   0.  0.  0.  0,   0, , 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+F0:27:65:24:C9:49, 2013-12-09 22:16:25, 2013-12-09 22:16:36, -74,        7, 1C:FA:68:2D:A3:CA,
+E0:06:E6:98:6D:EA, 2013-12-09 22:16:20, 2013-12-09 22:16:38, -127,      153, 1C:FA:68:2D:A3:CA,
+00:21:5D:B4:AC:A4, 2013-12-09 22:16:20, 2013-12-09 22:16:34,   0,       13, A4:99:47:5F:FE:24,
+

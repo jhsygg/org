@@ -1,0 +1,91 @@
+#+STARTUP: overview
+#+STARTUP: hidestars
+* HTML 语言基础
+** 了解HTML的一些背景知识
+*** 什么是HTML
+<marquee behavior="altermate"><font size="30" color="red">www.it315.org</marquee>
+HTML是英文HyperText Markup Language(超文本标签语言)的缩写。
+以“<标签名>”表示标签的开始，以“</标签名>”表示标签的结束。
+成对标签又称之为容器，一对标签中还可以嵌套其它的标签。在xhmtl标准中，标签嵌套是有分层约束的。
+单独标签不需要与之配对的结束标签，又称之为空标签，例如<br>。在xhtml中为<br />
+一个HTML标签及标签中嵌套的内容就是网页中的一个HTML元素。
+属性设置的一般格式为：属性名=属性值，属性值部分可以用英文的双引导("")或单引号('')引起来，也可以不使用任何引号。
+浏览器访问网页文档的方式(http协议)
+*** HTML规范与版本
+不同的浏览器之间的不兼容问题。
+为什么要制定规范。
+谁来制订规范
+    IETF
+    W3C
+正在使用的HTML版本
+    HTML4.01
+    XHTML
+*** IETF与W3C组织
+** HTML的全局架构标签
+<html></html>
+<head></head>
+<title></title>
+<body></body>
+*** body标签的属性
+**** text属性：用于设定整个网页中的文字颜色
+**** link属性：用于设定一般超链接文本的显示颜色
+**** alink属性：用于设定鼠标移动到上时，超链接文本的显示颜色。
+**** vlink属性：用于设定访问过的超链接文本的显示颜色。
+**** bockground属性：用于设定背景墙纸所有的图像文件，可以是GIF或JPEG文件的绝对或相对路径。
+**** gbcolor属性：用于设定背景颜色，当已设定背景墙纸时，这个属性会失去作用，除非墙纸具有透明部分。
+**** leftmargin属性：设定网页显示画面与浏览器窗口左边沿和间隙，单位为像素。
+**** topmargin属性：设定内面显示画面与浏览器窗口上边沿的间隙，单位为像素。
+**** class、name、id、style等属性。
+** 格式标签
+** 文本标签
+** 超链接标签
+** 图像标签
+** 图像地图
+* HTML 语言高级
+* CSS（级联样式表）
+* JavaScript语法
+** 什么是脚本程序和JavaScript
+*** 什么是脚本程序
+<script language="javascript">
+   alert(new Date());
+</script>
+** 脚本代码的位置
+*** 放置在<script></script>标签对之间。 
+<script type="text/javascript">
+  var x=1;
+</script>
+<p>这是一个HTML段落</p>
+<script type="text/javascript">
+  alert(x);
+</script>
+*** 放置在一个文件中
+xxx.js
+
+<script src="xxx.js" language="javascript">
+</script>
+*** 将脚本程序代码作为属性值
+<a herf="javascript: alert(now Date());">javascript</a>
+** JavaScript的保留关键字
+| abstrack | extends    | int       | super         |
+|----------+------------+-----------+---------------|
+| boolean  | false      | interface | switch        |
+| break    | final      | long      | syncluronized |
+| byte     | finally    | native    | this          |
+| case     | float      | new       | throw         |
+| catch    | for        | null      | throws        |
+| char     | function   | package   | transient     |
+| class    | goto       | private   | true          |
+| const    | if         | protected | try           |
+| continue | implements | publice   | var           |
+| default  | import     | reture    | viod          |
+| do       | in         | short     | while         |
+| double   | instanceof | static    | with          |
+| else     |            |           |               |
+
+** JavaScript的基本语法
+*** JavaScript中的标识符
+标识符是指JavaScript中定义的符号，例如，变量名、函数名、数组名等，标识符可以由任意顺序的大小写字母、数字、下划线(_)和美元符号($)组成，但标识符不能以数字开头，不能是JavaScript中的保留关键字。
+*** 
+* DOM对象模型编程
+* 脚本编程技术汇总
+* 正则表达式

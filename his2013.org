@@ -1,0 +1,1005 @@
+[jdp@jhsygg ~]$ history
+    1  sudo yum install axel -y
+    2  ps
+    3  shutdown -h now
+    4  sudo yum install fcitx*
+    5  sudo yum install samba
+    6  sudo yum install samba-client
+    7  sudo yum install samba
+    8  sudo yum update -y
+    9  ps
+   10  sudo yum install fcitx*
+   11  shutdown -h now
+   12  sudo yum install fcitx* -y
+   13  sudo yum upgrade -y
+   14  sudo yum install libreoffice -y
+   15  ps
+   16  shutdown -h now
+   17  exzit
+   18  exit
+   19  ps -aux
+   20  sudo yum install mysql mysql-server -y
+   21  sudo yum install mysql -y
+   22  sudo yum install mysql-server -y
+   23  sudo systemctl start mysqld.service
+   24  sudo systemctl enable mysqld.service
+   25  chkconfig --levels 235 mysqld on
+   26  sudo chkconfig --levels 235 mysqld on
+   27  systemctl status mysqld.service
+   28  mysqladmin -u root password 
+   29  sudo yum install httpd -y
+   30  chkconfig --levels 235 httpd on
+   31  sudo chkconfig --levels 235 httpd on
+   32  systemctl start httpd.service
+   33  sudo systemctl start httpd.service
+   34  sudo systemctl status httpd.service
+   35  sudo setup
+   36  sudo yum install php -y
+   37  sudo systemctl enable httpd.service
+   38  sudo systemctl start httpd.service
+   39  ps -axu |grep httpd
+   40  sudo chmod -R 775 var
+   41  sudo chmod -R 775 /var/
+   42  sudo chmod -R 777 /var/
+   43  sudo yum install php-mysql php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc php-eaccelerator php-magickwand php-magpierss php-mapserver php-mbstring php-mcrypt php-mhash php-mssql php-shout php-snmp php-soap php-tidy
+   44  sudo yum update -y
+   45  sudo systemctl restart httpd.service
+   46  ls
+   47  cd Downloads/
+   48  ls
+   49  mv yasnippet-0.6.1c/
+   50  ls -al
+   51  mv yasnippet-bundle.el ~/.emacs.d/plugins/
+   52  mv yasnippet-0.6.1c ~/.emacs.d/plugins/
+   53  cd opt
+   54  cd /opt/
+   55  ls
+   56  matlab
+   57  PATH=$PATH:/opt/bin
+   58  cd bin
+   59  ls
+   60  ./matlab
+   61  sudo export PATH=$PATH:/opt/bin/
+   62  export PATH=$PATH:/opt/bin/
+   63  cd ~
+   64  matlab
+   65  sudo yum install gimp -y
+   66  ps
+   67  sudo chmod -R 777 /var/www
+   68  shutdown -h now
+   69  sudo system-config-printer
+   70  sudo chmod 700 -R /var/db/sudo
+   71  sudo system-config-printer
+   72  sudo emacs &
+   73  ps
+   74  su
+   75  sudo emacs &
+   76  ls -al
+   77  sudo yum install sudo
+   78  emacs /etc/sudoers
+   79  cd /etc/
+   80  ls
+   81  sudo vi sudoers
+   82  sudo emacs
+   83  sudo systemctl restart httpd.service
+   84  sudo systemctl status httpd.service
+   85  sudo emacs
+   86  sudo systemctl restart httpd.service
+   87  sudo systemctl status httpd.service
+   88  sudo emacs
+   89  sudo systemctl restart httpd.service
+   90  sudo emacs
+   91  sudo systemctl restart httpd.service
+   92  sudo emacs
+   93  sudo systemctl restart httpd.service
+   94  sudo emacs
+   95  cd /var/www/html
+   96  ls -al|grep php
+   97  ls -al |grep html
+   98  sudo emacs
+   99  shutdown -h now
+  100  sudo emacs
+  101  sudo systemctl restart httpd.service
+  102  setcnforce 0
+  103  setenforce 0
+  104  sudo setenforce 0
+  105  sudo chmod 755 -R /var/www
+  106  semanage fcontext -l|grep '/var/www'
+  107  sudo semanage fcontext -l|grep '/var/www'
+  108  sudo getsebool
+  109  man selinux
+  110  sudo getenforce
+  111  sudo sestatus
+  112  ls -Z /www/html
+  113  ls -Z /var/www/html
+  114  cd ..
+  115  cd ~
+  116  sudo chcon -R -t httpd_user_content_t /var/www/html/
+  117  ls -Z /var/www/html
+  118  shutdown -h now
+  119  getenforce
+  120  sestatus
+  121  locate cback
+  122  locate index.html
+  123  ls -i /var/www/html/index.html
+  124  ls -lZ /var/www/html/index.html
+  125  string index.html
+  126  strings index.html
+  127  grep /root/exploit.log
+  128  grep localhost/root/exploit.log
+  129  ls -lZ /etc/selinux
+  130  ls
+  131  vi diary
+  132  ls
+  133  mv chinese-calendar.el ~/.emacs.d/plugins/
+  134  cd ~/.emacs.d/plugins/
+  135  ls
+  136  shutdown -h now
+  137  sudo yum update -y
+  138  sudo yum install pidgin
+  139  sudo yum install pidgin-lwqq
+  140  sudo yum install libpurple0 pidgin-lwqq
+  141  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  142  sudo yum install cmake -y
+  143  sudo yum install mozjs185 -y
+  144  sudo yum list |grep mozjs185
+  145  sudo yum install js-devel -y
+  146  sudo yum install libpurple-devel -y
+  147  sudo vi /etc/hosts
+  148  ls -al
+  149  cd Downloads/
+  150  ls
+  151  cd pidgin-lwqq-master/
+  152  ls
+  153  cd ~
+  154  ls -al
+  155  cd Downloads/
+  156  cd pidgin-lwqq-master/cmake/
+  157  ls
+  158  cmake .. -DSSL=On
+  159  sudo yum install libpurple-devel
+  160  sudo yum install libev-devel
+  161  cmake .. -DSSL=On
+  162  make
+  163  cmake .. -DSSL=On
+  164  sudo yum remove libev-devel
+  165  cmake .. -DSSL=On
+  166  sudo yum install libev-devel -y
+  167  cmake .. -DSSL=On
+  168  ls -al
+  169  cd liblwqq/
+  170  ls
+  171  cd CMakeFiles/
+  172  ls
+  173  ls -al
+  174  cd ..
+  175  ls
+  176  cmake .. -DSSL=On
+  177  sudo yum remove libev-devel libpurple-devel -y
+  178  cmake .. -DSSL=On
+  179  cd ..
+  180  rm -rf pidgin-lwqq-master
+  181  ls
+  182  cd pidgin-lwqq-master/
+  183  cd cmake/
+  184  cmake .. -DSSL=On
+  185  sudo yum install js-devel -y
+  186  cmake .. -DSSL=On
+  187  make
+  188  sudo yum install ssl
+  189  make
+  190  cmake .. -DSSL=On
+  191  sudo cmake .. -DSSL=On
+  192  git
+  193  sudo yum install git
+  194  git submodule init
+  195  git
+  196  cd ~
+  197  git submodule init
+  198  git clone
+  199  git submodule update
+  200  sudo git submodule init
+  201  export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+  202  git submodule init
+  203  git status
+  204  git submodule init
+  205  ls
+  206  git log
+  207  git init
+  208  git log
+  209  git init
+  210  git submodule init
+  211  git clone
+  212  git submodule update
+  213  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  214  git submodule init
+  215  git submodule update
+  216  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  217  git clone https://github.com/xiehuc/pidgin-lwqq
+  218  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  219  cd .git
+  220  ls
+  221  cd ..
+  222  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  223  sudo yum install gcc gcc-c++ make cmake pkgconfig glib-devel libcurl-devel libpurple-devel sqlite-devel libev-devel zlib-devel js-devel
+  224  cd Downloads/
+  225  ls
+  226  cd pidgin-lwqq-master/
+  227  cd cmake/
+  228  ls
+  229  sudo cmake .. -DSSL=On
+  230  cd ~
+  231  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  232  shutdown -h now
+  233  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  234  sudo vi /etc/hosts
+  235  git clone https://github.com/xiehuc/pidgin-lwqq.git
+  236  cd pidgin-lwqq/
+  237  ls
+  238  cd cmake/
+  239  cmake .. -DSSL=On
+  240  ls
+  241  cd liblwqq/
+  242  ls
+  243  cd ..
+  244  make
+  245  make install
+  246  ls
+  247  cd ..
+  248  mkdir build
+  249  cd build/
+  250  cmake ../
+  251  make
+  252  dnf instll libev-dev
+  253  yum instll libev-dev
+  254  dnf insatll libev-dev
+  255  yum insatll libev-dev
+  256  yum install libev-dev
+  257  sudo yum install libev-dev
+  258  sudo yum install libev-devel
+  259  cmake ../
+  260  cmake ..
+  261  make
+  262  cd ../src
+  263  ls
+  264  sudo yum install zlib-devrl -y
+  265  sudo yum install zlib-devel -y
+  266  cd ..
+  267  cd build/
+  268  mack
+  269  make
+  270  sudo yum install lwqq -y
+  271  cmake
+  272  cmake .. -DSSL=On
+  273  ls -al
+  274  cd src
+  275  ls
+  276  cd CMakeFiles/
+  277  ls
+  278  cd ..
+  279  ls
+  280  cd ..
+  281  ls
+  282  make
+  283  cmake .. -DSSL=On
+  284  ls
+  285  cd ..
+  286  ls
+  287  vi CMakeLists.txt 
+  288  cd liblwqq/
+  289  ls
+  290  ls -al
+  291  cd ..
+  292  emacs &
+  293  cd ~/Downloads/
+  294  ls
+  295  rm -rf pidgin-lwqq-master.zip 
+  296  rm -rf pidgin-lwqq-master
+  297  ls
+  298  ls |grep pidgin
+  299  ls
+  300  cd ~
+  301  ls
+  302  ls -al
+  303  cd pidgin-lwqq/
+  304  ls
+  305  cd .git
+  306  ls
+  307  git status
+  308  cd ..
+  309  git status
+  310  cd .git
+  311  git status
+  312  cd ..
+  313  git commit
+  314  cd org
+  315  ls
+  316  cd .
+  317  cd ..
+  318  git clone dot.emacs.d
+  319  matlab
+  320  PATH=$PATH:/opt/bin/
+  321  matlab
+  322  shutdown -h now
+  323  yum list |grep gtk
+  324  sudo yum install gtk3-devel.x86_64 
+  325  cd /var/www/html
+  326  ls -al|grep tzsb
+  327  cd ..
+  328  sudo chmod 777 -R www
+  329  sudo yum install -y  'tex(xmpmulti.sty)'
+  330  sudo yum install -y  'tex(subfigure.sty)'
+  331  sudo yum install libqq-pidgin
+  332  sudo yum update -y
+  333  shutdown -h now
+  334  $PATH
+  335  echo $PATH
+  336  export PATH=$PATH:/opt/bin/
+  337  echo $PATH
+  338  cd .emacs.d/
+  339  ls
+  340  cd matlab-emacs/
+  341  ls
+  342  cd ..
+  343  cd matlab-emacs/
+  344  ls
+  345  make
+  346  ls -al
+  347  make install
+  348  ls -al
+  349  cd toolbox/
+  350  ls
+  351  cd ..
+  352  ls -al
+  353  cls
+  354  clc
+  355  cd /usr/share/fonts/
+  356  ls
+  357  cd msfonts/
+  358  ls
+  359  mkfontscale
+  360  ls
+  361  mkfontscale
+  362  sudo mkfontscale
+  363  ls
+  364  sudo mkfontdir
+  365  ls
+  366  shutdown -h now
+  367  fc-list
+  368  xlsfonts
+  369  xset +fp /usr/share/fonts/wqy-bitmap
+  370  sudo xset +fp /usr/share/fonts/wqy-bitmap
+  371  xset +fp /usr/share/fonts/wqy-bitmap
+  372  history
+  373  cd /usr/share/fonts/wqy-bitmap/
+  374  ls
+  375  sudo mkfontscale
+  376  sudo mkfontdir
+  377  fc-cache -fv
+  378  xlsfonts
+  379  ls
+  380  cat fonts.dir
+  381  fc-list
+  382  xlsfonts
+  383  xset +fp /usr/share/fonts/wqy-bitmap
+  384  xlsfonts
+  385  shutdown -h now
+  386  sudo yum install textutil
+  387  man textutil
+  388  yum list |grep textutil
+  389  fc-list |grep WenQuanYi
+  390  fc-list
+  391  fc-list |grep YaHei
+  392  fc-list
+  393  xlsfonts
+  394  sudo yum update -y
+  395  shutdown -h now
+  396  ssh
+  397  ssh -D 7070 211.92.140.191
+  398  ssh -qTfnN -D 7070 jdp@211.92.140.191
+  399  ssh jdp@211.92.140.191 -D 127.0.0.1:7070
+  400  ssh -qTfnN -D 770 jdp@211.92.140.191
+  401  ssh -qTfnN -D 7070 jdp@211.92.140.191
+  402  sudo ssh -D 127.0.0.1:7070 jdp@211.92.140.191
+  403  h -D 127.0.0.1:7070 jdp@211.92.140.191
+  404  ssh -D 127.0.0.1:7070 jdp@211.92.140.191
+  405  sudo ssh -D 127.0.0.1:7070 jdp@211.92.140.191
+  406  fc-list
+  407  fc-list |grep con
+  408  fc-list |grep Mic
+  409  xlsfonts
+  410  cd ~/.emacs.d/elpa/ac-dict/
+  411  ls
+  412  sudo yum install lha
+  413  cd ~/Downloads/
+  414  ls
+  415  mv keisen-mule.el ~/.emacs.d/plugins/
+  416  mv keisen-mouse.el ~/.emacs.d/plugins/
+  417  ls -al |grep kei
+  418  rm -rf 'keisen-mule(1).lzh'
+  419  rm -rf 'keisen-mule(2).lzh'
+  420  rm -rf 'keisen-mule(1).lzh'
+  421  ls -al |grep kei
+  422  cd ..
+  423  mysql -uroot -p
+  424  sudo systemctl start mysqld.service
+  425  sudo systemctl enable mysqld.service
+  426  sudo systemctl status mysqld.service
+  427  mysql -uroot -p
+  428  mysql
+  429  mysqladmin -u root password jh6246
+  430  sudo mysqladmin -u root password jh6246
+  431  sudo mysqladmin -u root password jh21467579
+  432  mysql -uroot -p
+  433  sudo yun install wget
+  434  sudo yum install wget
+  435  sudo yum update -y
+  436  sudo yum install 'graphviz*'
+  437  shutdown -h now
+  438  sudo ssh -D 127.0.0.1:7070 jdp@211.92.140.191
+  439  systemctl statue sshd.service
+  440  systemctl stuts sshd.service
+  441  systemctl status sshd.service
+  442  systemctl enable sshd.service
+  443  sudo systemctl enable sshd.service
+  444  sudo systemctl start sshd.service
+  445  systemctl status sshd.service
+  446  sudo ssh -D 127.0.0.1:7070 jdp@211.92.140.191
+  447  sudo ssh -qTfnN -D 7070 jdp@211.92.140.191
+  448  sudo ssh -D 7070 s4.alidage.org
+  449  sudo ssh s4.alidage.org
+  450  sudo ssh -D s4.alidage.org
+  451  sudo ssh -D 7070 s4.alidage.org
+  452  sudo ssh -N -D 7070 guest@s4.alidage.org
+  453  ssh -N -D 7070 guest@s4.alidage.org
+  454  sudo yum install -av graphviz-dot-mode
+  455  sudo yum install graphviz-dot-mode
+  456  emerge
+  457  shutdown -h now
+  458  cd mytest/
+  459  T7-1
+  460  ./T7-1
+  461  sudo yum install texlive-latex-extra
+  462  sudo yum install 'tex(comment.sty)' -y[A
+  463  sudo yum install 'tex(color.sty)' -y
+  464  sudo yum install 'tex(lastpage.sty)' -y
+  465  sudo yum install 'tex(placeins.sty)' -y
+  466  sudo yum install 'tex(titlesec.sty)' -y
+  467  sudo yum install 'tex(colortbl.sty)' -y
+  468  sudo ssh -N -D 7070 guest@s4.alidage.org
+  469  ls
+  470  cd ~/.emacs.d/
+  471  ls
+  472  cd elpa
+  473  ls
+  474  cd ac-dict
+  475  ls
+  476  cd ..
+  477  ls
+  478  cd ~/Downloads/
+  479  ls
+  480  ls -al |grep auto
+  481  cd auto-complete-1.3.1/
+  482  ls
+  483  make
+  484  make install
+  485  ls
+  486  cd dict
+  487  ls
+  488  sudo yum install auctex
+  489  fc-list
+  490  cd ~/.emacs.d/el-get/
+  491  ls
+  492  cd el-get/
+  493  ls
+  494  cd ..
+  495  ls
+  496  cd auto-complete+/
+  497  ls
+  498  cd ~
+  499  mkdir blog
+  500  cd blog
+  501  ls
+  502  mkdir unfinished
+  503  sudo yum install 'tex(cteart.cls)'
+  504  history
+  505  sudo yum install 'tex(cteart.cls)'
+  506  sudo yum install unrar -y
+  507  sudo yum update -y
+  508  shutdown -h now
+  509  sudo yum install 'tex(SIunits.sty' -y
+  510  sudo yum install 'tex(SIunits.sty)' -y
+  511  sudo yum install 'tex(xltxtra.sty)' -y
+  512  sudo yum install 'tex(polyglossia.sty)' -y
+  513  shutdown -h now
+  514  sudo yum update -y
+  515  gpg --import jhsygg.gpg
+  516  cd ~/org/
+  517  gpg --import jhsygg.gpg
+  518  gpg --gen-key
+  519  gpg --list-keys
+  520  yum list |grep easygp
+  521  yum list |grep emacs-easygp
+  522  sudo yum install emacs-easypg
+  523  yum list |grep easypg
+  524  gpg -export
+  525  gpg --export
+  526  sudo gpg -export
+  527  man gpg
+  528  sudo gpg --export
+  529  gpg --export
+  530  gpg -export
+  531  gpg --export
+  532  gpg-gen-key
+  533  gpg --gen-key
+  534  gpg --list-keys
+  535  gpg --gen-key --homedir/mygnupg
+  536  gpg --gen-key
+  537  gpg --list-keys
+  538  gpg --list-sig
+  539  gpg --list-key
+  540  gpg --list-public-key
+  541  gpg --export -a jhsygg.jh@126.com > jhsygg.asc
+  542  gpg --export -a jhsygg@126.com > jhsygg.asc
+  543  gpg --export jhsygg@126.com > jhsygg.gpg
+  544  cd ~/.emacs.d/plugins/
+  545  ls
+  546  cd ..
+  547  cd el-get/
+  548  ls
+  549  cd session/
+  550  ls
+  551  c session
+  552  cd session
+  553  ls
+  554  cd lisp
+  555  ls
+  556  cp session.el ~/.emacs.d/plugins/
+  557  ls
+  558  cd ..
+  559  ls
+  560  cd ..
+  561  ls
+  562  tar -xvf session-2.2a.tar.gz 
+  563  ls
+  564  cd session/
+  565  ls
+  566  cd lisp/
+  567  ls
+  568  vi session.el 
+  569  cd ..
+  570  ls
+  571  rm -rf session
+  572  cd ~
+  573  ls
+  574  ls -al
+  575  cd .gnupg/
+  576  ls
+  577  cd ..
+  578  ls
+  579  shutdown -h now
+  580  sudo yum update -y
+  581  shutdown -h now
+  582  mysql -uroot -p
+  583  cd ~/Downloads/
+  584  ls
+  585  mv ibuffer.el ~/.emacs.d/plugins/
+  586  mv ido.el ~/.emacs.d/plugins/
+  587  mv tabbar.el ~/.emacs.d/plugins/
+  588  mv table.el ~/.emacs.d/plugins/
+  589  shutdown -h now
+  590  shutdown - h now
+  591  sudo yum update -y
+  592  sudo yum install -y nmap
+  593  man nmap
+  594  man emacs
+  595  sudo yum list xournal
+  596  sudo yum install -y xournal irssi
+  597  sudo yum install -y irssi-scripts
+  598  irssi
+  599  shutdown -h now
+  600  sudo yum install ditaa
+  601  sudo yum install vym -y
+  602  sudo yum install freemind -y
+  603  cd mytest
+  604  ./T7-1 
+  605  sudo yum install gtd3 gtd3-devel gtd3-devel-docs -y
+  606  sudo yum install gtd2 gtd2-devel gtd2-devel-docs -y
+  607  sudo yum install gtk3 gtk3-devel gtk3-devel-docs -y
+  608  sudo yum install gnome-devel gnome-devel-docs -y
+  609  gcc `pkg-config --cflags --libs gtk+-2.0` gtktest.c -o gtktest
+  610  cd /usr/share/gtk
+  611  cd /usr/share/
+  612  ls
+  613  cd gtk
+  614  cd gtk-3.0/
+  615  ls
+  616  cd ..
+  617  ls
+  618  cd bin
+  619  cd ..
+  620  cd bin
+  621  ls
+  622  cd ~/mytest/
+  623  gcc `pkg-config --cflags --libs gtk+-3.0` gtktest.c -o gtktest
+  624  ls
+  625  gcc `pkg-config --cflags --libs gtk+-3.0` gtktest.c -o gtktest
+  626  ./gtktest 
+  627  gcc `pkg-config --cflags --libs gtk+-3.0` gtktest.c -o gtktest
+  628  ./gtktest 
+  629  shutdown -h now
+  630  sudo yum update -y
+  631  cd mytest
+  632  ./T7-2
+  633  exit
+  634  cd mytest
+  635  ./T7-3
+  636  ls
+  637  ./T2-1
+  638  sudo yum update -y
+  639  history
+  640  sudo ssh -qTfnN -D 7070 jdp@211.92.140.191
+  641  history
+  642  history |grep dot
+  643  history |grep gcc
+  644  sudo yum update -y
+  645  shutdwon -h now
+  646  shutdown -h now
+  647  mysql -uroot -p
+  648  nmap
+  649  nmap -v -A www.orgmode.org
+  650  ls
+  651  cd Downloads/
+  652  ls
+  653  sudo yum update -y
+  654  shutdown -h now
+  655  cd Downloads/
+  656  ls -al
+  657  ls -al |grep ide
+  658  ls -al
+  659  ls -al |gro ide*
+  660  ls -al |grep ide*
+  661  cd emacs-ide-1.10/
+  662  ls
+  663  cd src
+  664  ls
+  665  sudo yum uptate -y
+  666  sudo yum update -y
+  667  cd ~/Downloads/emacs-ide-1.10/
+  668  ls
+  669  cp -R src ~/.emacs.d/plugins/
+  670  ls
+  671  cd ~/.emacs.d/plugins/emacs-ide/
+  672  ls
+  673  ls -al
+  674  cd ..
+  675  ls
+  676  cd ~/Downloads/
+  677  ls
+  678  ls -al|grep emacs-ide
+  679  tar -xvf emacs-ide-1.11.tar.xz 
+  680  ls
+  681  cd emacs-ide-1.11/
+  682  ls
+  683  ./install
+  684  ./install -l
+  685  sudo yum install ctags -y
+  686  ./install -l
+  687  sudo yum install cscope -y
+  688  ./install -l
+  689  sudo yum install etags -y
+  690  git clone git://git.tuxfamily.org/gitroot/eide/emacs-ide.git
+  691  cd ..
+  692  ls
+  693  cd emacs-ide-1.11/
+  694  ls
+  695  cd emacs-ide
+  696  ls
+  697  ./install
+  698  ./install -l
+  699  cd ~/.emacs.d/site-lisp/
+  700  ls
+  701  cd ..
+  702  ls
+  703  cd ..
+  704  ls
+  705  ls |grep emacs
+  706  cd Downloads/emacs-ide-1.11/emacs-ide/
+  707  ./install -l
+  708  cd ~/.emacs.d/site-lisp/
+  709  ls
+  710  cd ..
+  711  sudo yum update -y
+  712  shutdown -h now
+  713  cd Downloads/
+  714  tar -xvf wqy-microhei-lite-0.2.0-beta.tar.gz 
+  715  cd wqy-microhei-lite/
+  716  ls
+  717  make
+  718  make install
+  719  cp wqy-microhei-lite.ttc /usr/share/font/
+  720  cp wqy-microhei-lite.ttc /usr/share/fonts/
+  721  sudo cp wqy-microhei-lite.ttc /usr/share/fonts/
+  722  fc-list
+  723  cd
+  724  la
+  725  ls
+  726  cd Downloads/
+  727  rm -rf wqy-microhei-lite*
+  728  la
+  729  ls
+  730  ls |grep wyq
+  731  cd 
+  732  ls
+  733  cd Downloads/
+  734  cd bb1781/
+  735  ls
+  736  sudo cp *.ttf /usr/share/fonts/
+  737  fc-list
+  738  cd ..
+  739  sudo cp *.ttf /usr/share/fonts/
+  740  cd ..
+  741  vi .emacs
+  742  cd .emacs.d/plugins/
+  743  l
+  744  ls
+  745  cd yasnippet-0.6.1c/
+  746  ls
+  747  cd snippets/
+  748  ls
+  749  cd text-mode/
+  750  ls
+  751  cd latex-mode/
+  752  ls
+  753  cd ..
+  754  cd .emacs.d/
+  755  ls
+  756  cd ..
+  757  ls
+  758  cd Mail
+  759  ls
+  760  cd inbox
+  761  ls
+  762  cd ..
+  763  ls
+  764  cd ..
+  765  ls
+  766  cd Mail
+  767  ls
+  768  cd inbocx
+  769  cd inbox
+  770  ls
+  771  cd ..
+  772  ls
+  773  sudo yum update -y
+  774  shutdown -h now
+  775  sudo setup
+  776  yum list linuxqq
+  777  yum list qq
+  778  yum list web
+  779  yum list |grep qq
+  780  fc-list
+  781  cd Downloads/
+  782  ls
+  783  ls |grep yas
+  784  tar -xvf yasnippet-bundle-0.6.1c.el.tgz 
+  785  ls
+  786  ls |grep yas
+  787  rm -rf yasnippet-bundle.el 
+  788  ls |grep yas
+  789  ls
+  790  ls |grep java
+  791  cd yasnippet-jaca
+  792  cd yasnippet-java
+  793  cd yasnippet-java-mode-master/
+  794  ls
+  795  cd classes/
+  796  ls
+  797  cd ..
+  798  cd exceptions/
+  799  ls
+  800  cd ..
+  801  ls
+  802  cd types
+  803  ls
+  804  cd ..
+  805  ls
+  806  cd ~/.emacs.d/
+  807  ls
+  808  mkdir snippets
+  809  cd snippets/
+  810  sudo git clone https://github.com/nekop/yasnippet-java-mode.git java-mode
+  811  ls
+  812  cd java-mode
+  813  ls
+  814  cd ..
+  815  ls
+  816  mv java-mode ~/.emacs.d/plugins/yasnippet-0.6.1c/snippets/text-mode/
+  817  sudo mv java-mode ~/.emacs.d/plugins/yasnippet-0.6.1c/snippets/text-mode/
+  818  ls
+  819  git clone https://github.com/nekop/yasnippet-java-mode.git java-mode
+  820  ls
+  821  ls -al
+  822  cd ~/.emacs.d/plugins/yasnippet-0.6.1c/
+  823  ls
+  824  cd snippets/
+  825  ls
+  826  cd text-mode/
+  827  ls
+  828  sudo rm -rf java-mode
+  829  cd ~/.emacs.d/snippets/
+  830  ls
+  831  mv java-mode ~/.emacs.d/plugins/yasnippet-0.6.1c/snippets/text-mode/
+  832  git clone https://github.com/nekop/yasnippet-latex-mode.git latex-mode
+  833  git clone git://github.com/secelis/yasnippet-latex-mode.git latex-mode
+  834  ls
+  835  cd latex-mode
+  836  ls
+  837  cd ..
+  838  git clone https://github.com/madsdk/yasnippets-latex.git latex-mode
+  839  rm -rf latex-mode
+  840  git clone https://github.com/madsdk/yasnippets-latex.git latex-mode
+  841  ls
+  842  cd latex-mode
+  843  ls
+  844  ./install.sh
+  845  install.sh
+  846  ./install.sh
+  847  ./install.sh ~/.emacs.d/plugins/yasnippet-0.6.1c/
+  848  cd ~/.emacs.d/plugins/yasnippet-0.6.1c/
+  849  ls
+  850  cd snippets/
+  851  ls
+  852  cd latex-mode/
+  853  ls
+  854  cd ..
+  855  cd text-mode/
+  856  ls
+  857  rm -rf latex-mode
+  858  cd ..
+  859  ls
+  860  git clone https://github.com/AndreaCrotti/yasnippet-snippets.git
+  861  ls
+  862  cd yasnippet-snippets/
+  863  ls
+  864  cd ..
+  865  ls
+  866  cd ..
+  867  ls
+  868  git clone https://github.com/AndreaCrotti/yasnippet-snippets.git
+  869  ls
+  870  cd el-get
+  871  ls
+  872  cd auto-complete+/
+  873  ls
+  874  cd ..
+  875  ls
+  876  cd ~/Downloads/
+  877  git clone https://github.com/auto-complete/auto-complete.git
+  878  cd auto-complete
+  879  ls
+  880  make
+  881  cd dict
+  882  ls
+  883  cd ..
+  884  rm -rf auto-complete
+  885  cd ~/.emacs.d/
+  886  cd plugins/
+  887  ls
+  888  cd ..
+  889  ls
+  890  git clone https://github.com/auto-complete/auto-complete.git
+  891  cd auto-complete/
+  892  ls
+  893  ps
+  894  shutdown -h now
+  895  matlab
+  896  export PAHT=/opt/bin:$PATH
+  897  echo $PATH
+  898  sudo vi /etc/profile
+  899  shutdown -h now
+  900  echo $PATH
+  901  sudo vi /etc/profile
+  902  export
+  903  sudo vi /etc/profile
+  904  source /etc/profile
+  905  echo $PATH
+  906  matlab
+  907  shutdown -h now
+  908  matlab &
+  909  exit
+  910  matlab &
+  911  exit
+  912  cd ~/.emacs.d/
+  913  ls
+  914  cd auto-complete/
+  915  ls
+  916  ls -al
+  917  make
+  918  cd ..
+  919  ls
+  920  git clone https://github.com/auto-complete/popup-el.git
+  921  ls
+  922  cd popup-el/
+  923  ls
+  924  make
+  925  cd ..
+  926  cd auto-complete/
+  927  make
+  928  git submodule init; git submodule update
+  929  make
+  930  ls
+  931  cd ..
+  932  git clone https://github.com/ejmr/php-mode.git
+  933  cd php-mode/
+  934  ls
+  935  make
+  936  cd ..
+  937  cd plugins/
+  938  ls
+  939  git clone --recursive https://github.com/capitaomorte/yasnippet
+  940  cd  yasnippet
+  941  ls
+  942  cd ..
+  943  rm -rf yasnippet
+  944  git clone --recursive https://github.com/capitaomorte/yasnippet
+  945  rm -rf yasnippet
+  946  ls
+  947  cd /usr/share/emacs/site-lisp/
+  948  ls
+  949  cd ..
+  950  \cd ..
+  951  ls
+  952  cd ~/.emacs.d/el-get
+  953  ls
+  954  cd ~/.emacs.d/
+  955  ls
+  956  git clone https://github.com/dimitri/el-get.git
+  957  ls
+  958  cd el-et
+  959  cd el-get
+  960  ls
+  961  cd ..
+  962  cd plugins/
+  963  ls
+  964  cd ..
+  965  vi .emacs
+  966  cd ..
+  967  vi .emacs
+  968  ls
+  969  cd .emacs.d/
+  970  ls
+  971  cd el-get/
+  972  ls
+  973  ls -al
+  974  ls
+  975  cd ..
+  976  rm -rf el-get
+  977  ls
+  978  cd ~/Downloads/
+  979  mv el-get-master ~/.emacs.d/el-get
+  980  cd ~/.emacs.d/
+  981  ls
+  982  cd el-get/
+  983  ls
+  984  ls -al
+  985  ls
+  986  cd 
+  987  ls
+  988  cd .emacs.d/
+  989  ls
+  990  rm -rf el-get
+  991  git clone https://github.com/dimitri/el-get.git
+  992  cd ..
+  993  ls
+  994  mv cal-china-x.el ~/.emacs.d/plugins/
+  995  cd .emacs.d/
+  996  ls
+  997  shutdown -h now
+  998  ps
+  999  shutdown -h now
+ 1000  history
+[jdp@jhsygg ~]$ exit
+exit
+
+Process shell finished

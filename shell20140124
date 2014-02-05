@@ -1,0 +1,1059 @@
+[jdp@jhsygg org]$ history
+    1  shutdown -h now
+    2  exec sudo -u root -s -H -p Password:
+    3  sudo vi /etc/httpd/conf/httpd.conf
+    4  restorecon -Rv webroot
+    5  chmod -R ug+rwX,o-w,o+rX webroot
+    6  /usr/sbin/setenforce 0
+    7  sudo /usr/sbin/setenforce 0
+    8  chcon -R -t httpd_sys_content_t webroot
+    9  sudo /usr/sbin/setenforce 1
+   10  chcon -R -t httpd_sys_content_t jwgl
+   11  chmod -R 755 jwgl
+   12  cd jwgl
+   13  ls
+   14  sudo vi /etc/hosts
+   15  restorecon -Rv jwgl
+   16  cd ..
+   17  restorecon -Rv jwgl
+   18  chcon -R -t httpd_sys_content_t jwgl
+   19  cd webroot
+   20  ls
+   21  ll
+   22  cd ..
+   23  chcon -R -t httpd_sys_content_t webroot
+   24  restorecon -Rv jwgl
+   25  restorecon -Rv webroot
+   26  chcon -R -t httpd_sys_content webroot
+   27  chcon -R -t httpd_sys_content_t webroot
+   28  chcon -R -t httpd_sys_content_t ~/webroot
+   29  restorecon -R -v ~/webroot
+   30  getsebool -a |grep http
+   31  ls -ldZ webroot
+   32  semanage fcontext -a -t httpd_sys_content_t ~/webroot(/.*)/?
+   33  semanage fcontext -a -t httpd_sys_content_t ~/webroot
+   34  sudo /usr/sbin/setenforce 0
+   35  cd etc
+   36  ls
+   37  cd /c\etc
+   38  cd /etc
+   39  ls
+   40  cd php
+   41  cd php.d
+   42  ls
+   43  cd .
+   44  cd ..
+   45  ll
+   46  sudo vi php.ini 
+   47  sudo vi /etc/php.ini
+   48  chcon -R -t httpd_user_comtent_t ~/webroot
+   49  chcon -R -t httpd_user_comtent_t webroot
+   50  chcon -Rt httpd_user_comtent_t webroot
+   51  setsebool -P httpd_disable_trans 1
+   52  sudo setsebool -P httpd_disable_trans 1
+   53  sudo setsebool -P httpd_disable_trans 0
+   54  exec sudo -u root -s -H -p Password:
+   55  sudo setsebool -P httpd_disable_trans 1
+   56  sudo setsebool -P httpd_disable_trans 0
+   57  setsebool -P httpd_disable_trans 0
+   58  sudo setsebool -P httpd_disable_trans 0
+   59  cd webroot
+   60  sudo setsebool -P httpd_disable_trans 0
+   61  cd ..
+   62  sudo getsebool -a
+   63  cd webroot/
+   64  ls -aZ *
+   65  cd ..
+   66  chcon -R -h -t httpd_sys_content_t webroot
+   67  cd webroot/
+   68  ls -aZ *
+   69  ps -Z
+   70  ls -Z
+   71  ps -Z
+   72  ls -Z
+   73  ls
+   74  ls -Z
+   75  cd /
+   76  cd var
+   77  ls -Z
+   78  cd www
+   79  cd html
+   80  ls -Z
+   81  cd /
+   82  ls
+   83  cd ~
+   84  ls
+   85  cd /var/www/html
+   86  ls -Z
+   87  cd ~
+   88  chcon -R -h -t httpd_sys_content_t ~/webroot
+   89  cd webroot/
+   90  ls -Z
+   91  cd ..
+   92  sudo chown -R root.root ~/webroot
+   93  cd webroot/
+   94  ls
+   95  ls -Z
+   96  cd /var/www/html
+   97  ls
+   98  ls -Z
+   99  cd ~
+  100  ls
+  101  sudo chown -R jdp.jdp ~/webroot
+  102  chmod -R 777 webroot
+  103  chmod -R 755 webroot
+  104  cd webroot/
+  105  ls -Z
+  106  cd /var/www/html
+  107  ls -Z
+  108  cd ~/webroot/
+  109  ls -Z
+  110  chcon -R -h -t httpd_user_content_t ~/webroot
+  111  ls -Z
+  112  sudo systemctl restart httpd.service
+  113  getenforce
+  114  setenforce 0
+  115  sudo setenforce 0
+  116  sudo systemctl restart httpd.service
+  117  getenforce
+  118  cd /var
+  119  ls -Z
+  120  cd www
+  121  ls -Z
+  122  cd html
+  123  ls -Z
+  124  cd ..
+  125  cd ~
+  126  ls -Z
+  127  ls
+  128  ls -Z
+  129  ls -Z  |grep webroot
+  130  cd webroot/
+  131  ls -Z 
+  132  setenforce 1
+  133  sudo setenforce 1
+  134  cd /var/www
+  135  restorecon -R html
+  136  cd html
+  137  ls -Z
+  138  cd ..
+  139  restorecon -R var
+  140  sudo restorecon -R var
+  141  cd /var
+  142  ls -Z
+  143  cd www
+  144  ls -Z
+  145  cd ..
+  146  ls -Z
+  147  cd www
+  148  cd ~
+  149  chcon --enforence=/var/www/html -R ~/webroot
+  150  man chcon
+  151  chcon --reference=/var/www/html -R ~/webroot
+  152  cd webroot/
+  153  ls -Z
+  154  sudo systemctl restart httpd.service
+  155  ps -Z
+  156  cd /var/www/
+  157  ls -Z
+  158  shutdown -h now
+  159  sudo vi /etc/hosts
+  160  sudo systemctl restart httpd.service
+  161  sudo systemctl restart networking.service
+  162  sudo hostname webram
+  163  uname -S webram
+  164  man uname
+  165  hostname webram
+  166  sudo hostname webram
+  167  sudo vi /etc/hosts
+  168  shutdown -h now
+  169  ls -Z ~/webram
+  170  chcon -R -t httpd_user_content_t ~/webram
+  171  sudo systemctl restart networking.service
+  172  sudo systemctl restart httpd.service
+  173  setenforce 0
+  174  sudo setenforce 0
+  175  sudo vi /etc/hosts
+  176  shutdown -h now
+  177  setenforce 0
+  178  sudo setenforce 0
+  179  chcon -R -t httpd_sys_content_t ~/webroot/
+  180  ls -Z ~/webroot
+  181  sudo systemctl restart httpd.service
+  182  sudo setenforce 1
+  183  getsebool
+  184  getsebool -a
+  185  getsebool -a |grep httpd
+  186  chown -R apache.apache ~/webroot
+  187  sudo chown -R apache.apache ~/webroot
+  188  ls -Z ~/webroot
+  189  sudo systemctl restart httpd.service
+  190  chcon --reference=/var/www/html /home/jdp/webroot
+  191  sudo chcon --reference=/var/www/html /home/jdp/webroot
+  192  sudo systemctl restart httpd.service
+  193  ls -Z ~/webroot
+  194  sudo chown jdp.jdp ~/webroot
+  195  ls -Z ~/webroot
+  196  sudo chown jdp.jdp -R ~/webroot
+  197  ls -Z ~/webroot
+  198  sudo chcon --reference=/var/www/html /home/jdp/webroot
+  199  ls -Z ~/webroot
+  200  sudo chcon --reference=/var/www /home/jdp/webroot
+  201  ls -Z ~/webroot
+  202  ls -Z /var/www
+  203  ls -Z /var/www/html
+  204  sudo chcon --reference=/var/www/  /home/jdp/webroot/
+  205  ls -Z /var/www/html
+  206  ls -Z ~/webroot
+  207  shutdown -h now
+  208  exec sudo -u root -s -H -p Password:
+  209  mv webroot /var/
+  210  sudo systemctl restart httpd.service
+  211  cd /var/webroot
+  212  git-add-help
+  213  git-help-add
+  214  git status
+  215  git add
+  216  git add .
+  217  git status
+  218  git commit -m "from /home/jdp/ move to  /var/"
+  219  git push
+  220  cd inc
+  221  ls
+  222  mysql -uroot -p
+  223  setup
+  224  sudo systemctl restart httpd.service
+  225  cd ..
+  226  cd templates/2013_02
+  227  cd ..
+  228  ls
+  229  cd inc
+  230  ls
+  231  cd ~/Downloads/
+  232  mv td_core.php /var/webroot/inc/
+  233  cd /var/webroot/inc
+  234  ls |grep td_core.php
+  235  ls -al |grep td_core.php
+  236  ls
+  237  ls -Z
+  238  chcon --reference=/var/webroot/inc/td_config.php /var/webroot/inc/td_core.php
+  239  mysql -uroot -p
+  240  cd ../..
+  241  ls
+  242  mkdir tdmm
+  243  ls
+  244  vi /etc/hosts
+  245  sudo vi /etc/hosts
+  246  echo "hello world" > index.html
+  247  echo "hello world" > /var/tdmm/index.html
+  248  ls -Z
+  249  chcon --reference=/var/webroot /var/tdmm
+  250  ls -Z
+  251  cd tdmm
+  252  ls
+  253  ls -Z
+  254  chcon --reference=/var/webroot/index.php /var/tdmm/
+  255  chcon --reference=/var/webroot/index.php /var/tdmm/index.html
+  256  mysql -uroot -p
+  257  cd /var/
+  258  ls
+  259  sudo systemctl restart mysqld.service
+  260  mysql -uroot -p
+  261  cd ~/Downloads/
+  262  ls -Z
+  263  cd /var
+  264  ls
+  265  cd ~/Downloads/
+  266  ls
+  267  tar zxvf matlab-emacs.tar.gz 
+  268  tar zxvf Smarty-3.1.16.tar.gz 
+  269  cd Smarty-3.1.16/
+  270  ls
+  271  cd libs
+  272  ls
+  273  cd ..
+  274  mv libs /var/ 
+  275  cd ..
+  276  rm -rf Smarty-3.1.16
+  277  ls
+  278  cd /var/
+  279  cd libs
+  280  ls
+  281  cd ..
+  282  ls -Z libs
+  283  cd webroot
+  284  mkdir smarty
+  285  cd ..
+  286  cp -R libs ../smarty/
+  287  sudo cp -R libs ../smarty/
+  288  cd smarty
+  289  ls
+  290  cd webroot
+  291  ls
+  292  cd smarty/
+  293  ls
+  294  cd ..
+  295  ls
+  296  cd ..
+  297  ls
+  298  cd libs
+  299  ls
+  300  cd ..
+  301  cp -R libs ./webroot/smarty/
+  302  cd ./webroot/smarty/
+  303  ls
+  304  mkdir templates
+  305  cd templates/
+  306  mkdir cache
+  307  mkdir templates
+  308  mkdir templates_c
+  309  mkdir config
+  310  cd templates
+  311  ls
+  312  cd ..
+  313  cd templates
+  314  cd ..
+  315  ls
+  316  mv smarty ../tdmm/
+  317  cd ../tdmm
+  318  ls
+  319  smarty
+  320  cd smarty/
+  321  ls
+  322  chmod a+w templates_c
+  323  chmod a+w templates/templates_c
+  324  ls -Z
+  325  chcon --reference=/var/webroot/ /var/tdmm/smarty/templates/
+  326  ls
+  327  ls -Z
+  328  cd templates/
+  329  ls
+  330  cd templates_c
+  331  ls -Z
+  332  ls
+  333  cd ..
+  334  ls templates
+  335  ls
+  336  ls -al
+  337  cd templates
+  338  ls
+  339  cd ..
+  340  cd templates_c
+  341  ls
+  342  cd ..
+  343  ls
+  344  ls -Z
+  345  cd ..
+  346  chmod -R 755 templates
+  347  cd /var/www
+  348  ls -Z
+  349  cd ..
+  350  cd webroot/
+  351  ls -Z
+  352  cd ..
+  353  cd weboot
+  354  cd webroot
+  355  ls
+  356  cd ..
+  357  ls -Z
+  358  chcon --reference=/var/webroot /var/tdmm
+  359  cd td mm
+  360  cd tdmm
+  361  ls -Z
+  362  chcon --reference=/var/webroot/ -R  /var/tdmm
+  363  ls
+  364  ls -Z
+  365  cd smarty/
+  366  ls -Z
+  367  cd templates/
+  368  ls
+  369  ls -Z
+  370  chmod -R 755 templates_c
+  371  ls -Z
+  372  chmod -R 777 templates_c
+  373  ls -Z
+  374  chmod -R 700 templates_c
+  375  ls -Z
+  376  chmod -R 755 templates_c
+  377  ls -Z
+  378  sudo chmode -R 777 templates_c
+  379  sudo chmod -R 777 templates_c
+  380  ls -Z
+  381  cd templates_c
+  382  ls
+  383  cd ..
+  384  cd templates
+  385  ls
+  386  cd ..
+  387  mkdir templates_c
+  388  mkdir cache
+  389  mkdir config
+  390  cd templates
+  391  mv ./templates/index.tpl ./
+  392  ls
+  393  cd ..
+  394  ls
+  395  cd templates
+  396  ls
+  397  rm -rf cache
+  398  rm -rf config
+  399  rm -rf templates_c
+  400  ls
+  401  rm -rf templates
+  402  ls
+  403  cd ..
+  404  ls
+  405  mv cache ../
+  406  mv config ../
+  407  mv templates ../
+  408  mv templates_c ../
+  409  ls
+  410  cd ..
+  411  ls
+  412  cd smarty/libs/
+  413  ls
+  414  cd plugins/
+  415  ls
+  416  cd ..
+  417  cd ~/Downloads/
+  418  ls
+  419  ls |grep tar
+  420  ls |grep Smarty-3.1.16.tar.gz 
+  421  ls |grep Smarty
+  422  mysql -uroot -p
+  423  cd /var/tdmm
+  424  mkdir inc
+  425  mkdir js
+  426  ls
+  427  cd ..
+  428  cd webroot
+  429  ls
+  430  cd ..
+  431  cd tdmm
+  432  ls
+  433  cd js
+  434  ls
+  435  cd ..
+  436  shutdown -h now
+  437  exec  
+  438  echo \"`getconf PATH 2>/dev/null`\" 2>/dev/null; echo tramp_exit_status $?
+  439  exec sudo -u root -s -H -p Password:
+  440  cd /etc
+  441  ls
+  442  cd php
+  443  sudo vi php.ini
+  444  sudo systemctl restart httpd.service
+  445  sudo vi php.ini
+  446  sudo systemctl restart httpd.service
+  447  cd /var
+  448  mv jpgraph ~/Downloads/
+  449  cd ~/Downloads/
+  450  cd jpgraph/
+  451  ls
+  452  cd src
+  453  ls
+  454  cd ..
+  455  mv jpgraph /var/
+  456  sudo systemctl restart httpd.service
+  457  cd /var
+  458  ls
+  459  sudo systemctl restart httpd.service
+  460  rm -rf egroupware
+  461  ls
+  462  cd ~/Downloads/
+  463  ls
+  464  mv egroupware /var/
+  465  cd /var
+  466  ls
+  467  chcon --reference=/var/webroot/ -R  /var/egroupware/
+  468  mysql -uroot -p
+  469  locale
+  470  chcon --reference=/var/webroot/ -R  /var/jpgraph/
+  471  sudo systemctl restart httpd.service
+  472  locale
+  473  sudo yum install gd
+  474  cd jpgraph/
+  475  ls
+  476  cd src
+  477  ls
+  478  cd 
+  479  cd /var
+  480  mv jpgraph ./egroupware/
+  481  sudo systemctl restart httpd.service
+  482  cd egroupware/
+  483  mv jpgraph ../
+  484  cd ..
+  485  ls
+  486  ls -Z
+  487  sudo yum install tnef
+  488  sudo yum install pear
+  489  sudo yum install pdo
+  490  sudo yum install pdo_pgsql
+  491  sudo yum install php_pdo
+  492  sudo yum install pdo_mysql
+  493  cd egroupware/
+  494  ls
+  495  cd ..
+  496  chmod -R 755 egroupware
+  497  ls
+  498  cd egroupware/
+  499  ls
+  500  cd /
+  501  sudo yum install egroupware
+  502  cd /var
+  503  chmod -R 777 egroupware
+  504  ls -Z
+  505  chmod -R 755 egroupware
+  506  ls
+  507  cd egroupware/
+  508  ls -Z
+  509  ls
+  510  cd ..
+  511  mv egroupware ~/Downloads/
+  512  cd ~/Downloads/
+  513  mv egroupware /var/
+  514  ls
+  515  chcon --reference=/var/webroot/ -R  /var/egroupware/
+  516  cd /var
+  517  ls
+  518  cd egroupware/
+  519  ls
+  520  ls -Z
+  521  cd ..
+  522  ll
+  523  sudo yum install egroupware
+  524  rm -rf egroupware
+  525  ls
+  526  cd ..
+  527  cd ~/Downloads/
+  528  ls
+  529  tar -xzvf groupoffice-com-4.0.140.tar.gz 
+  530  cd groupoffice-com-4.0.140/
+  531  ls
+  532  ./groupoffice
+  533  ./groupoffice jdp
+  534  cd install
+  535  ls
+  536  cd ..
+  537  ls
+  538  ./updatesvn.sh 
+  539  cd install/
+  540  ls
+  541  cd ..
+  542  ls
+  543  mv groupoffice-com-4.0.140 /var/
+  544  cd /var
+  545  chcon --reference=/var/webroot/ -R  /var/groupoffice-com-4.0.140/
+  546  sudo yum install groupoffice-com
+  547  sudo yum install groupoffice
+  548  sudo yum list |grep group
+  549  cd groupoffice-com-4.0.140/
+  550  vi config.php
+  551  chmod 666 config.php 
+  552  ls
+  553  ls -Z
+  554  sudo yum list |grep groupcd ..
+  555  cd ..
+  556  chcon --reference=/var/webroot/ -R  /var/groupoffice-com-4.0.140/
+  557  cd groupoffice-com-4.0.140/
+  558  chmod 777 config.php 
+  559  chmod 666 config.php 
+  560  ls
+  561  ls -Z
+  562  cd ..
+  563  cd groupoffice/
+  564  ls
+  565  chmod 666 /var/groupoffice/config.php
+  566  ls -Z
+  567  cd ..
+  568  rm -rf groupoffice/
+  569  ls
+  570  cd ~/Downloads/
+  571  ls
+  572  rm -rf groupoffice-com-4.0.140.tar.gz 
+  573  ls -Z
+  574  rm -rf temp_2*
+  575  ls -z
+  576  ls -Z
+  577  rm -rf eGroupware-v1.8.004.20120405.rar 
+  578  rm -rf jpgraph-3.0.7.tar.gz 
+  579  rm -rf PHProjekt_v6.2.1.zip 
+  580  shutdown -h now
+  581  cd /var/
+  582  ls
+  583  cd webroot
+  584  ls
+  585  shutdown -h now
+  586  cd /var/www/html
+  587  ls
+  588  cd ..
+  589  chmod -R 755 html
+  590  sudo chmod -R 755 html
+  591  ls -Z
+  592  sudo chmod -R 777 html
+  593  sudo yum install yed
+  594  sudo yum install yED
+  595  sudo yum install bouml
+  596  sudo yum install argouml
+  597  cd ~/Downloads/
+  598  ls
+  599  tar -xzvf ArgoUML-0.34.tar.gz 
+  600  cd argouml-0.34/
+  601  ls
+  602  ./argouml.sh
+  603  cd ..
+  604  mv argouml-0.34 ../
+  605  cd ..
+  606  cd argouml-0.34
+  607  ./argouml.sh &
+  608  cd ..
+  609  rpm list |grep bouml
+  610  sudo yum uninstall bouml
+  611  rpm -e bouml
+  612  sudo rpm -e bouml
+  613  sudo yum list bouml
+  614  sudo rpm -e bouml
+  615  sudo yum remove bouml
+  616  sudo yum remove bouml.x86_64
+  617  rpm -e bouml
+  618  man yum
+  619  sudo yum remove bouml
+  620  yum search bouml
+  621  yum remove bouml*
+  622  sudo yum remove bouml*
+  623  sudo yum remove bouml
+  624  cd argouml-0.34/
+  625  ./argouml.sh &
+  626  ll
+  627  cd argouml-0.34/
+  628  sudo yum update -y
+  629  ./argouml.sh &
+  630  jsshutdown -h now
+  631  shutdown -h now
+  632  cd argouml-0.34/
+  633  ./argouml.sh &
+  634  sudo yum install emacs
+  635  cd argouml-0.34/
+  636  ./argouml.sh &
+  637  cd ~/Downloads/
+  638  ls
+  639  ls |grep ww
+  640  ls
+  641  cd zentaopms/
+  642  ls
+  643  make
+  644  ls
+  645  cd www
+  646  ls
+  647  cd ..
+  648  cd tools
+  649  ls
+  650  cd ..
+  651  cd db
+  652  ls
+  653  cd ..
+  654  ls
+  655  cd tools
+  656  ls
+  657  cd ..
+  658  ls
+  659  cd config
+  660  ls
+  661  cd ..
+  662  ls
+  663  cd zentaopms/
+  664  ls
+  665  cd ..
+  666  ll
+  667  cd test
+  668  ls
+  669  cd ..
+  670  cd doc
+  671  ls
+  672  cat README
+  673  ls
+  674  ll
+  675  vi README.zh_CN 
+  676  cat INSTALL 
+  677  cd ..
+  678  mv zentaopms /var/
+  679  cd /var/
+  680  ll
+  681  ls -Z
+  682  chcon --reference=/var/webroot/ -R  /var/zentaopms/
+  683  ls -Z
+  684  sudo vi /etc/hosts
+  685  ls
+  686  ll
+  687  cd  zentaopms/
+  688  ll
+  689  cd zentaopms/
+  690  ls
+  691  cd ..
+  692  chmod o=rwx -R tmp
+  693  ls
+  694  chmod -R 777 tmp
+  695  cd ..
+  696  chmod o=rwx -R /var/zentaopms/tmp
+  697  cd /var
+  698  ls
+  699  ll
+  700  cd zentaopms/
+  701  ls
+  702  ll
+  703  chmod o=rwx -R tmp
+  704  ll
+  705  cd www
+  706  ls
+  707  mkdir data
+  708  rm -rf data
+  709  mkdir -p /var/zentaopms/www/data
+  710  ll
+  711  chmod -R 777 data
+  712  ll
+  713  sudo systemctl restart httpd.service
+  714  cd ..
+  715  ls
+  716  chmod -R 755 tmp
+  717  chmod -R 777 tmp
+  718  cd tmp
+  719  ls
+  720  cd ..
+  721  ls
+  722  cd zentaopms/
+  723  l;
+  724  ll
+  725  chmod -R 777 tmp
+  726  ls
+  727  ll
+  728  cd ..
+  729  ll
+  730  cd zentaopms/
+  731  ls
+  732  ll
+  733  cd www
+  734  ls
+  735  cd www
+  736  ls
+  737  ll
+  738  cd ..
+  739  chmod o=rwx -R tmp
+  740  ll
+  741  ls
+  742  ll
+  743  cd tmp
+  744  ll
+  745  cd ..
+  746  cd www/data
+  747  ll
+  748  cd ..
+  749  ll
+  750  cd ..
+  751  ls
+  752  cd ..
+  753  ls
+  754  cd zentaopms/
+  755  ls
+  756  ls -Z
+  757  sudo yum install mariadb
+  758  sudo systemctl stop mysqld.service
+  759  sudo yum install mariadb
+  760  sudo systemctl start mysqld.service
+  761  own
+  762  sudo yum install aircrack-ng
+  763  aircrach-ng &
+  764  cd ~/Downloads/;
+  765  ls
+  766  ll
+  767  ll |grep air
+  768  sudo yum install aircrack-ng
+  769  rpm list aircrack-ng
+  770  cd ~
+  771  cd /
+  772  sudo find aircrack
+  773  sudo find ~ aircrack
+  774  sudo find ~ aircrack-ng
+  775  sudo find / aircrack-ng
+  776  aircrack-ng
+  777  iwlist
+  778  iwlist keys
+  779  iwconfig ath1 
+  780  iwconfig ath0
+  781  iwconfig wlan0
+  782  iwconfig wlan0 scanning
+  783  iwlist wlan0 scanning
+  784  airmon-ng start wlan0 9
+  785  airodump-ng mon0
+  786  aircrack-ng 128bit.ivs
+  787  aircrack-ng start wlan0 6
+  788  aircrack-ng start wlan0 9
+  789  aircrack-ng start wlan0 1
+  790  aircrack-ng start wlan0 2
+  791  airmon-ng start wlan0 6
+  792  airmon-ng start wlan0 9
+  793  airmon-ng start wlan0
+  794  sudo airmon-ng start wlan0
+  795  sudo airodump-ng mon0
+  796  iwlist wlan0 scanning
+  797  sudo airodump-ng mon0
+  798  sudo airodump-ng -c ASUS --bssid ec:85:2f:56:f3:f0 -w p123 mon0
+  799  sudo airodump-ng -C ASUS --bssid ec:85:2f:56:f3:f0 -w p123 mon0
+  800  sudo airodump-ng -C 6 --bssid ec:85:2f:56:f3:f0 -w p123 mon0
+  801  sudo airodump-ng -C 9 --bssid ec:85:2f:56:f3:f0 -w p123 mon0
+  802  vi p123
+  803  ll
+  804  sodu yum install gramps
+  805  sudo yum install gramps
+  806  sudo yum install grimwepa
+  807  sudo yum install grim-wepa
+  808  sudo yum install pyrit
+  809  gramps &
+  810  shutdown -h now
+  811  sudo yum install octave
+  812  sudo yum install smplayer
+  813  sudo airodump-ng mon0
+  814  iwlist wlan0 scanning
+  815  sudo airodump-ng mon0
+  816  airodump-ng mon0
+  817  iwconfig wlan0 scanning
+  818  sudo yum install openproj
+  819  cd ~/Downloads/
+  820  ls
+  821  tar -xzvf openproj-1.4-linux-1374045102000.tar.gz 
+  822  cd openproj-1.4/
+  823  ./openproj.sh &
+  824  ls
+  825  ./openproj.sh &
+  826  sudo yum install java
+  827  ls
+  828  ll
+  829  sudo yum install OpenProj
+  830  sudo yum install OpenProj-1.4-2
+  831  yum list openproj
+  832  yum list open
+  833  yum list yum
+  834  yum list Open
+  835  cd ..
+  836  rm -rf openproj-1.4
+  837  ll
+  838  rm -rf openproj-1.4-linux-1374045102000.tar.gz 
+  839  rpm -ivh openproj-1.4-2.noarch.rpm 
+  840  sudo rpm -ivh openproj-1.4-2.noarch.rpm 
+  841  sudo sudo rpm -ivh jre-7u51-linux-x64.rpm 
+  842  cd ~/.openproj/
+  843  ll
+  844  sudo vi run.conf 
+  845  cd /usr
+  846  ls
+  847  cdjava
+  848  cd java
+  849  ls
+  850  cd latest
+  851  ls
+  852  cd ..
+  853  ls
+  854  cd jre1.7.0_51
+  855  ls
+  856  cd ..
+  857  cd latest
+  858  ls
+  859  cd java
+  860  ls
+  861  cd latest
+  862  ls
+  863  cd bin
+  864  ls
+  865  cd ~/.openproj/
+  866  sudo vi run.conf 
+  867  cd ~/Downloads/
+  868  ll |grep jdk
+  869  rpm -ivh jdk-7u51-linux-x64.rpm 
+  870  sudo rpm -ivh jdk-7u51-linux-x64.rpm 
+  871  sudo yum remove openjdk
+  872  sudo yum list openjdk
+  873  sudo yum list OpenJdk
+  874  cd /etc
+  875  ls
+  876  cd java
+  877  ls
+  878  vi java.conf 
+  879  ll
+  880  vi java.conf 
+  881  sudo vi /home/jdp/.openproj/
+  882  cd .openproj/
+  883  ls
+  884  sudo vi run.conf 
+  885  mv run.conf /var/
+  886  cd /var
+  887  mv run.conf ~/.openproj/
+  888  cd ~/.openproj/
+  889  ls
+  890  ll
+  891  vi java-version 
+  892  cd /usr/java/
+  893  ls
+  894  cd latest/
+  895  ls
+  896  cd bin
+  897  ls
+  898  ll
+  899  man java
+  900  java -version
+  901  cd ../..
+  902  ls
+  903  cd jre1.7.0_51
+  904  ls
+  905  cd bin
+  906  ll
+  907  java -version
+  908  cd ..
+  909  cd latest/
+  910  java -version
+  911  cd ..
+  912  ls
+  913  cd jdk1.7.0_51/
+  914  ls
+  915  cd bin
+  916  ls
+  917  java -version
+  918  cd ..
+  919  ls
+  920  cd ..
+  921  ls
+  922  cd latest/
+  923  l;
+  924  ll
+  925  cd bin
+  926  ls
+  927  java -version
+  928  cd ..
+  929  cd /usr/share/java
+  930  ls
+  931  ll
+  932  cd /usr/lib64/
+  933  ll
+  934  java -version
+  935  ll
+  936  ll |grep jaca
+  937  ll |grep java
+  938  cd java-1.7.0/
+  939  ls
+  940  ll
+  941  cd ..
+  942  ls
+  943  cd java
+  944  ll
+  945  cd jdk1.7.0_51/
+  946  ll
+  947  cd ..
+  948  ll
+  949  cd latest/
+  950  ls
+  951  cd bin
+  952  ls
+  953  ll
+  954  cd ..
+  955  ls
+  956  cd ..
+  957  ls
+  958  cd default/
+  959  ll
+  960  cd bin
+  961  java -version
+  962  shutdown -h now
+  963  sudo vi /etc/profile
+  964  . /etc/profile
+  965  java -version
+  966  shutdown -h now
+  967  cd /usr/java
+  968  ll
+  969  cd jdk1.7.0_51/
+  970  ls
+  971  cd lib
+  972  ls
+  973  sudo yum -y remove openproj.noarch 
+  974  ps -Z
+  975  java -version
+  976  sudo yum list java
+  977  rpm -qa |grep jdk
+  978  sudo yum -y remove java-1.7.0-openjdk.x86_64 java-1.7.0-openjdk-devel.x86_64 
+  979  java -version
+  980  sudo yum install libreoffice*
+  981  sudo yum -y install libreoffice
+  982  sudo yum update -y
+  983  cd myworks
+  984  git push
+  985  git status
+  986  ls
+  987  git add help
+  988  git help add
+  989  history
+  990  history | grep git add
+  991  history | grep git
+  992  ll
+  993  cd /var
+  994  ls
+  995  cd tdmm
+  996  ls
+  997  ll
+  998  cd ..
+  999  shutdown -h now
+ 1000  history
+[jdp@jhsygg org]$ history |grep git
+  212  git-add-help
+  213  git-help-add
+  214  git status
+  215  git add
+  216  git add .
+  217  git status
+  218  git commit -m "from /home/jdp/ move to  /var/"
+  219  git push
+  984  git push
+  985  git status
+  987  git add help
+  988  git help add
+  990  history | grep git add
+  991  history | grep git
+ 1001  history |grep git
+[jdp@jhsygg org]$ history |grep chcon
+    8  chcon -R -t httpd_sys_content_t webroot
+   10  chcon -R -t httpd_sys_content_t jwgl
+   18  chcon -R -t httpd_sys_content_t jwgl
+   23  chcon -R -t httpd_sys_content_t webroot
+   26  chcon -R -t httpd_sys_content webroot
+   27  chcon -R -t httpd_sys_content_t webroot
+   28  chcon -R -t httpd_sys_content_t ~/webroot
+   48  chcon -R -t httpd_user_comtent_t ~/webroot
+   49  chcon -R -t httpd_user_comtent_t webroot
+   50  chcon -Rt httpd_user_comtent_t webroot
+   66  chcon -R -h -t httpd_sys_content_t webroot
+   88  chcon -R -h -t httpd_sys_content_t ~/webroot
+  110  chcon -R -h -t httpd_user_content_t ~/webroot
+  149  chcon --enforence=/var/www/html -R ~/webroot
+  150  man chcon
+  151  chcon --reference=/var/www/html -R ~/webroot
+  170  chcon -R -t httpd_user_content_t ~/webram
+  179  chcon -R -t httpd_sys_content_t ~/webroot/
+  190  chcon --reference=/var/www/html /home/jdp/webroot
+  191  sudo chcon --reference=/var/www/html /home/jdp/webroot
+  198  sudo chcon --reference=/var/www/html /home/jdp/webroot
+  200  sudo chcon --reference=/var/www /home/jdp/webroot
+  204  sudo chcon --reference=/var/www/  /home/jdp/webroot/
+  238  chcon --reference=/var/webroot/inc/td_config.php /var/webroot/inc/td_core.php
+  249  chcon --reference=/var/webroot /var/tdmm
+  254  chcon --reference=/var/webroot/index.php /var/tdmm/
+  255  chcon --reference=/var/webroot/index.php /var/tdmm/index.html
+  325  chcon --reference=/var/webroot/ /var/tdmm/smarty/templates/
+  358  chcon --reference=/var/webroot /var/tdmm
+  362  chcon --reference=/var/webroot/ -R  /var/tdmm
+  467  chcon --reference=/var/webroot/ -R  /var/egroupware/
+  470  chcon --reference=/var/webroot/ -R  /var/jpgraph/
+  515  chcon --reference=/var/webroot/ -R  /var/egroupware/
+  545  chcon --reference=/var/webroot/ -R  /var/groupoffice-com-4.0.140/
+  556  chcon --reference=/var/webroot/ -R  /var/groupoffice-com-4.0.140/
+  682  chcon --reference=/var/webroot/ -R  /var/zentaopms/
+ 1002  history |grep chcon
+[jdp@jhsygg org]$ exit
+exit
+
+Process shell finished

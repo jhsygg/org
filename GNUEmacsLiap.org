@@ -1,0 +1,339 @@
+* 列表处理
+** Lisp列表
+*** List原子
+*** 列表中的空格
+*** GNU Emacs帮助你输入列表
+** 运行一个程序
+** 产生错误消息
+** 符号名和函数定义
+** Lisp解释器
+** 求值
+C-x C-e eval-last-sexp sexq--symbol expression(符号表达式) eval--evaluation(求值)
+(+ 2 (+ 3 3))C-x C-e
+:8
+** 变量
+fill-column C-x C-e
+:70
+** 参量
+*** 参量的数据类型
+(concat "abc" "def")
+:"abcdef"
+
+(substring "The quick brown fox jumped." 16 19)
+:"fox"
+*** 作为变量和列表的值的参量
+(+ 5 fill-column)
+:75
+
+(concat "The" (+ 2 fill-column) " red foxes.")
+
+*** 数目可变的参量
+*** 用一个错误类型的数据对象作为参量
+*** message函数
+(message "This message appears in the echo area!")
+
+(message "The name of this buffer is: %s." (buffer-name))
+(message "The value of fill-column is %d." fill-column)
+(message "There are %d %s in the office!"
+          (- fill-column 14) "pink elephants")
+** 给一个变量赋值
+*** 使用set函数
+*** 使用setq函数
+*** 使用set函数
+(set 'flowers '(rose violet daisy buttercup))
+flowers
+*** 使用setq函数
+(setq flowers '(rose violet daisy buttercup))
+(setq trees '(pine fir oak maple)
+             herbivores '(gazelle antelope zebbra))
+*** 计数
+(setq counter 0)
+(setq counter (+ counter 1))
+counter
+
+* 求值实践
+** 缓冲区名
+(buffer-name)
+(buffer-file-name)
+C-u C-x C-e 将返回值显示在表达式后面。
+** 获得缓冲区
+(current-buffer)
+(other-buffer)
+** 切换缓冲区
+
+** 缓冲区大小和位点的定位
+;;返回缓冲区中的字符数
+(buffer-size)
+;;光标所在的位置
+(point)
+
+* 如何编写函数定义
+一个函数定义在defun一词之后最多有下列一个部分：
+1、符号名，这是函数定义将要依附的符号。
+2、将要传送给函数的参量列表。如果没有任何参量传送给函数，那它就是一个空列表()。
+3、描述这个函数的文档。(技术上说，这部分是可选的，但是我强烈推荐你使用。)
+4、一个使函数成为交互的表达式，这是可选的。因此，可以通过键入M-x和函数名来使用它，或者键入一个适当的键或者键序列来使用它。
+5、指导计算机如何运行的代码，这是函数定义的主体。
+** defun特殊表
+(defun function-name (arguments...)
+       "optional-documentation"
+       (interactive argument-passing-info") ;optional
+       body...)
+
+(defun multiply-by-seven (number)
+    "Multiply NUMBER by seven."
+    (* 7 number))
+
+(defun Multiply-by-seven (number)
+    "Multiply NUMBER by seven."
+    (interactive "p")
+    (message "The result is %d" (* 7 number)))
+
+(multiply-by-seven 3)
+
+** 安装函数定义
+
+**
+** 使函数成为交互函数
+** interactive函数的不同选项
+** 永久地安装代码
+** let函数
+*** let表达式的各个部分
+(let ((variable value)
+      (variable value)
+      ...)
+      body...)
+*** let表达式例子
+(let ((zebra 'stripes)
+      (tiger 'fierce)))
+
+(message "One kind of animal has %s and another is %s." zebra tiger)
+*** let语句中的未初始化变量
+
+** if特殊表
+(if true-or-false-test
+    action-to-carry-out-if-test-is-true)
+
+(if (> 5 4)
+    (message "5 is greater than 4!"))
+
+** if-then-else表达式
+(if true-or-false-test
+    action-to-carry-out-if-test-returns-true)
+  action-to-carry-out-if-test-returns-false)
+** Lisp中的真与假
+** save-excursion函数
+(save-excursion
+  first-expression-in-body
+  second-expression-in-body
+  third-expression-in-body
+  ...
+  last-expression-in-body)
+
+(let varlist
+  (save-excursion
+  body...))
+
+** 回顾
+** 练习
+* 与缓冲区有关的函数
+** 查找更多的信息
+** 简化的beginning-of-buffer函数定义
+beginning-of-buffer 命令：将光标移动到缓冲区的开始位置，一般绑定到M-<。
+下面是简化的beginning-of-buffer函数的完整代码
+(defun simplified-beginning-of-buffer ()
+  "Move point to the beginning of the buffer;leave mark at previous position."
+  (interactive)
+  (push-mark)
+  (goto-char (point-min)))
+
+1、函数名：simplified-beginning-of-buffer
+2、参量列表：()
+3、文档字符串："Move point ..."
+4、交互表达式：(interactive);没有参量
+5、函数体：两行组成，(push-mark) (goto-char (point-min))
+** make-whole-buffer函数的定义
+make-whole-buffer函数,它将整个缓冲区作为一个域来标记，方法是将位点置于缓冲区开始的位置，在缓冲区的末尾位置放一个标记。一般绑定到C-x h。完整定义如下：
+(defun mark-whole-buffer ()
+  "Put point at beginning and mark at end of buffer."
+  (interactive)
+  (push-mark (point))
+  (push-mark (point-max))
+  (push-mark (point-min)))
+** append-to-buffer函数的定义
+*** append-to-buffer函数的交互表达式
+*** append-to-buffer函数中的save-excurtion
+#<<append-to-buffer>>
+append-to-buffer 命令使用 insert-buffer-substring 函数来拷贝一个域。功能是：它从一个缓冲区提取一部分作为一个字符串，即：“子字符串“(substring)，并将这个字符串插入到另外一个缓冲区中。append-to-buffer函数的绝大部分工作就是为 insert-buffer-substring函数创建适当的条件：即它的代码必须指定字符串的来源缓冲区和目的缓冲区。下面就是这个函数定义的全部内容：
+(defun append-to-buffer (buffer start end)
+  "Append to specified buffer the text of the region.
+  It is inserted into that buffer before its point.
+  When calling from a program. give three arguments:
+  a buffer or the name of one,and two character numbers."
+  (interactive "BAppend to buffer: \nr")
+  (let ((oldbuf (current-buffer)))
+    (save-excursion
+      (set-buffer (get-buffer-create buffer))
+      (insert-buffer-substring oldbuf start end))))
+
+* 更复杂的函数
+** copy-to-buffer函数的定义
+这个函数将文本拷贝进一个缓冲区，它不是追加到原有缓冲区，而是替换了原有缓冲区中的文本。copy-to-buffer函数的代码几乎与append-to-buffer函数的代码完全一样，不同之处仅在于它使用了erase-buffer 函数，并两次使用了save-excursion函数。参见[[append-to-buffer][append-to-buffer]]
+copy-to-buffer 函数体如下所示：
+...
+  (interactive "BCopy to buffer: \nr")
+    (let ((oldbuf (current-buffer)))
+      (save-excursion
+        (set-buffer (get-buffer-create buffer))
+	(erase-buffer)
+	(save-excursion
+	  (insert-buffer-substring oldbuf start end)))))
+** insert-buffer函数的定义
+将另外一个缓冲区内容拷贝到当前缓冲区中。
+(defun insert-buffer (buffer)
+  "Insert after point the contents of BUFFER.
+  Puts mark after the inserted text.
+  BUFFER may be a buffer or a buffer name."
+    (interactive "*bInsert buffer: ")
+    (or (bufferp buffer)
+        (setq buffer (get-buffer buffer)))
+    (let (start end newmark)
+        (save-excursion
+	  (save-excursion
+	    (set-buffer buffer)
+	    (setq start (point-min) end (point-max)))
+        (insert-buffer-substring buffer start end)
+	(setq newmark (point)))
+     (push-mark newmark)))
+
+*** insert-buffer函数中的交互表达式
+    
+(interactive "*bInsert buffer: ")
+"*" 用于缓冲区是一个只读缓冲区的情况。
+"b" 告诉Lisp解释器传送给insert-buffer函数的参量应是一个存在的缓冲区或者这个缓冲区的名字。（大写”B“可以允许参量传送不存在的缓冲区）。 
+*** insert-buffer函数体
+insert-buffer函数体有两个主要的部分：一个or表达式和一个let表达式。or表达式的目的是为了确保buffer参量真正与一个缓冲区绑定在一起，而不是绑定到缓冲区的名字。let表达式包含了将另一个缓冲区的内容拷贝到当前缓冲区所需的代码。
+*** 用if表达式（而不是or表达式）编写的insert-buffer函数
+*** 函数体中的or表达式
+*** insert-buffer函数中的let表达式
+** beginning-of-buffer函数的完整定义
+*** 可选参量
+*** 带参量的beginning-of-buffer函数
+*** 完整的beginning-of-buffer函数
+** 回顾
+** &optional参量练习
+* 变窄和增宽
+** save-restriction特殊表
+用来跟踪变窄开启的部分。
+** what-line函数
+光标所在的行数。
+(defun what-line ()
+  "Print the current line number (in the buffer) of point."
+  (interactive)
+  (save-restriction 
+    (widen)
+    (save-excursion
+      (beginning-of-line)
+      (message "Line %d" 
+                (1+ (count-lines 1 (point)))))))
+* 基本函数：car、cdr、cons
+** car和cdr函数
+car返回列表的第一个元素。更为合适的名字first。
+(car '(rose violet daisy buttercup))
+:rose
+
+cdr返回除第一个元素的其他部分。更为合适的名字rest。
+(cdr '(rose violet daisy buttercup))
+:(violet daisy buttercup)
+
+** cons函数
+在列表开始处插入元素。
+(cons 'butterup ())
+(cons 'daisy '(buttercup))
+(cons 'violet '(daisy buttercup))
+(cons 'rose '(violet daisy buttercup))
+
+length函数
+返回列表中有多少元素。
+(length '(rose daisy buttercup violet))
+** nthcdr函数
+nthcdr函数与cdr函数联系在一起。它所做的就是重复地取列表的cdr。
+(nthcdr 2 '(rose violet daisy buttercup))
+:(daisy buttercup)
+
+(nthcdr 5 '(rose violet daisy buttercup))
+:nil
+** setcar函数
+(setq animals '(giraffe antelope tiger lion))
+
+(setcar animals 'hippopotamus)
+
+* 剪切和存储文本
+** zap-to-char函数
+It is bound to M-z
+(zap-to-char ARG CHAR)
+将光标当前位置（即位点）与出现特定字符的下一个位置之间这一区域中的文本剪切掉。
+完整代码：
+(defun zap-to-char (arg char)
+  "Kill up to and including ARGth occurrence of CHAR.
+Case is ignored if `case-fold-search' is non-nil in the current buffer.
+Goes backward if ARG is negative; error if CHAR not found."
+  (interactive "p\ncZap to char: ")
+  ;; Avoid "obsolete" warnings for translation-table-for-input.
+  (with-no-warnings
+    (if (char-table-p translation-table-for-input)
+	(setq char (or (aref translation-table-for-input char) char))))
+  (kill-region (point) (progn
+			 (search-forward (char-to-string char) nil nil arg)
+;			 (goto-char (if (> arg 0) (1- (point)) (1+ (point))))
+			 (point))))
+** interactive表达式
+** delete-region函数：接数C
+delete-region函数删除一个区域中的内容，而且你无法找回它。
+** 用defvar初始化变量
+* 列表是如何实现的
+* 找回文本
+* 循环和递归
+* 正则表达式查询
+* 计数：重复和正则表达式
+* 统计函数定义中的单词数
+* 准备柱型图
+* 配置你的“.emacs”文件
+** 全站点的初始化文件
+** 为一项任务设置变量
+** 开始改变“.emacs”文件
+** 文本和自动填充模式
+** 邮件别名
+** 缩排模式
+** 一些绑定键
+** 加载文件
+** 自动加载
+** 一个简单的功能扩充line-tp-top-of-window
+** 键图
+** X11的颜色
+** V19中的小技巧
+** 修改模式行
+* 调试
+** debug
+** debug-on-entry
+** debug-on-quit和(debug)
+** 源代码级调试器edegub
+** 调试练习
+* 结论
+* 附录A the-the函数
+* 附录B kill环的处理
+** rotate-yank-pointer函数
+** yank函数
+** yank-pop函数
+* 附录C 带坐标轴的图
+** print-graph函数的变量列表
+** print-Y-axis函数
+*** 题外话：计算余数
+*** 构造一个Y轴元素
+*** 创建Y坐标轴
+*** print-Y-axis函数的最后形式
+** print-X-axis函数
+** 打印整个图形
+*** 测试print-graph函数
+*** 绘制函数中单词和符号数的图形
+*** 打印出来的图形

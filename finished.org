@@ -1,0 +1,38 @@
+#+STARTUP: hidestars
+* Tasks
+** DONE 6月博宏设备例会						    :@Office:
+   SCHEDULED: <2013-06-05 三>
+ 
+ [[file:~/org/task.org]]
+** DONE 完善检修安全锁制度
+   CLOSED: [2013-12-10 二 07:06] DEADLINE: <2013-12-13 五 16:00>
+   - State "DONE"       from "SOMEDAY"    [2013-12-10 二 07:06] \\
+     已经拟制相关文件
+  :PROPERTIES:
+  :LAST_REPEAT: [2013-12-06 五 09:33]
+  :END:
+** DONE 1211陈文毅
+   CLOSED: [2013-12-12 四 06:57] SCHEDULED: <2013-12-11 三>
+   - State "DONE"       from "SOMEDAY"    [2013-12-12 四 06:57]
+** DONE 1206曲军
+   CLOSED: [2013-12-10 二 07:08] SCHEDULED: <2013-12-06 五>
+   - State "DONE"       from "SOMEDAY"    [2013-12-06 五 07:08]
+** DONE 1218周雪
+   CLOSED: [2013-12-19 四 08:09] SCHEDULED: <2013-12-18 三>
+   - State "DONE"       from "SOMEDAY"    [2013-12-19 四 08:09]
+** DONE 1225蒋登平
+   CLOSED: [2013-12-25 三 11:14] SCHEDULED: <2013-12-25 三>
+   - State "DONE"       from "SOMEDAY"    [2013-12-25 三 11:14]
+** DONE 春节值班						    :@Office:
+   CLOSED: [2014-02-05 三 07:49] DEADLINE: <2014-02-03 一>
+   - State "DONE"       from "SOMEDAY"    [2014-02-05 三 07:49]
+** DONE 水渣业务(早会)						    :@Office:
+   CLOSED: [2014-02-05 三 07:50]
+   - State "DONE"       from "SOMEDAY"    [2014-02-05 三 07:50]
+   - State "DONE"       from "SOMEDAY"    [2014-01-30 四 08:36]
+   - State "DONE"       from "SOMEDAY"    [2014-01-28 二 15:45] \\
+     没开会，组织者无人。
+   - State "DONE"       from "SOMEDAY"    [2014-01-27 一 12:06]
+   - State "DONE"       from "SOMEDAY"    [2014-01-26 日 07:11]
+   <2014-01-26 日 8:00>--<2014-02-01 8:00>
+* Journals

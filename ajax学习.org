@@ -1,0 +1,10 @@
+#+STARTUP: overview
+#+STARTUP: hidestars
+* AJAX技术入门
+** AJAX和传统web开发的不同之处
+** XMLHttpRequest对象的五步使用法
+** XMLHttpRequest对象的属性与方法
+* JQuery实战
+** JQuery框架简介
+
+[1]This link is: http://orgmode.org

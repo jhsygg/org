@@ -1,0 +1,32 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+TAGS: { @Office(o) @Computer(c) @Home(h) @Call(C) @Why(w) @Lunchtime(l) }
+#+TAGS: 
+* Tasks
+:为了使各个分类项目的标题在日程表（Agenda View）1中显示，需要在项目名称下面写上“#+CATEGORY”。
+#+CATEGORY: Tasks
+** TODO 
+ 
+ [[file:~/org/gtd.org::*%E4%BA%8C%E7%BA%A7%E5%8D%95%E4%BD%8D%E8%AE%BE%E5%A4%87%E9%A2%86%E5%AF%BC%E7%AC%AC%E5%91%A8%E6%A3%80%E6%9F%A5%E4%B8%80%E6%AC%A1%EF%BC%8C%E6%A3%80%E6%9F%A5%E7%BB%93%E6%9E%9C%E6%8A%A5%E5%BC%A0%E7%A4%BC%E5%B4%87%EF%BC%8C%E4%B8%8D%E6%9F%A5%E6%AF%8F%E6%AC%A1%E8%80%83%E6%A0%B81000%E5%85%83%EF%BC%8C%E4%B8%8D%E6%8A%A5%E6%A3%80%E6%9F%A5%E7%BB%93%E6%9E%9C%E8%A7%86%E4%B8%BA%E6%B2%A1%E6%A3%80%E6%9F%A5%E3%80%82][二级单位设备领导第周检查一次，检查结果报张礼崇，不查每次考核1000元，不报检查结果视为没检查。]]
+
+** DONE WAITING 国庆放假，请假倍岳父去西藏旅游			      :@Home:
+   CLOSED: [2013-09-29 日 08:16] SCHEDULED: <2013-09-29 日>  
+   - State "DONE"       from "SOMEDAY"    [2013-09-29 日 08:16]
+   - State "TODO"       from ""           [2013-09-29 日 08:16]
+** TODO 上交钟山区特种设备管理清查表格
+   DEADLINE: <2013-11-20 三>
+ 
+ [[file:~/org/gtd.org.gpg::*Tasks][Tasks]]
+ 
+* Ideas
+** 去检查各单位是如何开展全员设备和5S管理的
+** 关于二级单位全员设备管理及5S活动分级管理的问题
+** 工艺不同，工作难度各异，应该加权绩效管理。
+** 设备管家，作为年终总结重要内容。
+** 可视化标识，提出规定（谢总负责）
+** emacs gtd 在规范化的设备点检体系中的应用
+** 制订车间级、厂级《设备点检手册》
+** 作为管理课题 并作为管理项目 形成车间、厂级博宏点检手册
+** 小河煤气发电改造为15MW发电机组？
+ 
+ [[file:~/.emacs::(global-set-key%20"\C-cr"%20'org-remember)][file:~/.emacs::(global-set-key "\C-cr" 'org-remember)]]

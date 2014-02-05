@@ -1,0 +1,34 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+FILETAGS: PROJECTS
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5EFFort(Time){:} %6CLOCKSUM{Total}
+
+* 3#发电机组大修工程
+
+** DONE 签订其他合同
+   CLOSED: [2013-07-15 一 15:40]
+   - State "DONE"       from ""           [2013-07-15 一 15:40]
+*** 发电机转子大修合同
+*** 发电机转子拆装合同
+冷却塔、冷凝器、汽轮机等合同 
+
+* TnPM项目
+** DONE WAITING 点检标准、润滑标准修订车间级成册
+   CLOSED: [2013-07-15 一 15:40] DEADLINE: <2013-06-30 日>
+   - State "DONE"       from ""           [2013-07-15 一 15:40]
+目的：标准的实用性，点检分工，点检成效应用。
+
+** DONE 点检标准、润滑标准修订厂级成册
+   CLOSED: [2013-10-03 四 20:46] DEADLINE: <2013-08-31 六>
+   - State "DONE"       from "SOMEDAY"    [2013-10-03 四 20:46]
+   - State "TODO"       from ""           [2013-10-03 四 20:46]
+目的：同上。
+
+** TODO “6源”排查和处理
+   DEADLINE: <2014-03-31 一> SCHEDULED: <2013-11-01 五>
+
+* 小河停产3个月
+** 停产期间最大需量问题
+   DEADLINE: <2013-12-23 一>
+** 停产结束后的需量重新申报
+   DEADLINE: <2014-03-20 四>

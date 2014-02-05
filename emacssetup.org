@@ -1,0 +1,23 @@
+指令全名：set-buffer-file-coding-system
+指令作用：改变当前buffer的编码
+调用方法：（以目标编码gbk为例）
+C-x <RET> f gbk <RET>
+该指令还可以改变当前buffer的换行习惯（编码参数用dos或unix，对应\r\n或\n）
+
+指令全名：universal-coding-system-argument
+指令作用：指定紧随其后的命令（如C-x C-f 或C-x C-w等）所采用的编码
+调用方法：（以目标编码gbk为例）
+C-x <RET> c gbk <RET>
+
+指令全名：revert-buffer-coding-with-coding-system
+指令作用：用指定编码重读当前buffer（如果打开时用错了编码）
+调用方法：（以目标编码gbk为例）
+C-x <RET> r gbk <RET>
+
+指令全名：recode-region
+指令作用：将以错误编码解码的选区以指定编码重新解码
+调用方法：（以目标编码gbk为例）
+M-x recode-region <RET> gbk <RET> utf-8 <RET>
+
+查看当前编码选择的命令为：
+M-x describe-coding-system <RET> 或 C-h C <RET>

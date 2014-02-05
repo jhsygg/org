@@ -1,0 +1,14 @@
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+#+lATEX_HEADER: \usepackage{xyz}
+* php.ini 设置
+** 打开调试信息显示
+在php.ini中修改
+error_reporting = E_ALL & ~E_NOTICE
+display_error = On
+
+file:/home/jdp/d1.png
+
+=afasfsfsaf=
+* php mysql 操作
+* php 

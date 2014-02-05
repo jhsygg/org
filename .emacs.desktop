@@ -1,0 +1,29 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Feb  5 13:56:49 2014
+;; Desktop file format version 206
+;; Emacs version 24.1.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("M-" "C-" "inter" "&" "epa" ".emacs" "erp" "interactive" "gpg" "emacs" "todo" "aC" "d2x" "_(" "git"))
+(setq regexp-search-ring '("&"))
+(setq register-alist (list '(48 "\221\243\250\221\234\364\251\373\221\243\251" "\221\243\250\221\266\376\221\243\251" "\221\243\250\221\310\375\221\243\251") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
+(setq file-name-history '("~/.emacs" "~/org/finished.org" "~/org/study.org" "~/org/notes.org" "~/org/journal.org.gpg" "~/org/gtd.org.gpg" "~/.emacs.d/bookmarks" "~/myworks/README.md" "~/myworks/" "~/myworks/.git/config" "~/mytest/.git/config" "~/mytest" "~/myworks/.git/index" "~/myworks/.git/info/exclude" "~/myworks/.git/COMMIT_EDITMSG" "~/myworks/.git/description" "~/myworks/.git/ORIG_HEAD" "~/myworks/.git/HEAD" "~/myworks/.git/FETCH_HEAD" "~/myworks" "~/matlab-study/run_hs_1.sh" "~/matlab-study/.git/config" "~/bh_regulations/.git/config" "~/" "/var/webroot/.git/config" "/var/webroot" "/var/webroot/.git/COMMIT_EDITMSG" "/var/webroot/.git/ORIG_HEAD" "/var/webroot/.git/index" "/var/webroot/.git/HEAD"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/jdp/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(auto-complete-mode yas/minor-mode linum-mode)
+  457
+  '(97 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+

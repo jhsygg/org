@@ -1,0 +1,4 @@
+#+STARTUP: showall
+* Someday
+** 计算机升级。
+** 去马尔代夫旅游。

@@ -1,0 +1,7 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+TAGS: {@Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l)}
+#+TAGS:
+* Notes
+** 这是第一个日记						       :Home:
+

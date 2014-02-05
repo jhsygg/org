@@ -1,0 +1,12 @@
+digraph G {
+        node[shape=box,style=filled,color=blue];
+	检查监测->CS->紧固->清扫;
+	CS->润滑;
+	CS->调整;
+	CS->更换;
+	CS->堵漏;
+	CS->防腐;
+	检查监测->诊断->维修->清扫->检查监测;
+	
+	CS[label="记录分析",color=green];
+}

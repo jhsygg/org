@@ -1,0 +1,6 @@
+#+STARTUP: hidestars
+* Tasks
+
+* Ideas
+
+* Notes
