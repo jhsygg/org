@@ -3199,3 +3199,63 @@ chcon --reference=/var/www/html -R ~/webroot
 Entered on [2014-01-17 五 22:06]
  
  [[file:~/org/gtd.org.gpg::*linux%E5%8F%8Alinux%E5%86%85%E6%A0%B8][linux及linux内核]]
+** 2014-02 二月
+*** 2014-02-07 星期五
+**** 七年级 上册 第1课 
+
+entered on [2014-02-07 五]
+ 
+ [[file:~/org/gtd.org.gpg::*%E8%AF%AD%E6%96%87][语文]]
+*** 2014-02-10 星期一
+**** ls 参数
+|--------+-----------------------------+----------------------------------------------------------|
+| 单字母 | 全字                        | 描述                                                     |
+|--------+-----------------------------+----------------------------------------------------------|
+| -a     | --all                       | 不要忽略以句点开关的条目                                 |
+| -A     | --almost -all               | 不要列出.和..文件                                        |
+|        | --author                    | 打印每个文件的作者                                       |
+| -b     | --escape                    | 打印不可打印字符的八进制值                               |
+|        | --block -size=size          | 使用size-byte块计算块大小                                |
+| -B     | --ignore -backups           | 不要列出带波浪号的条目（波浪号表示备份副本）             |
+| -c     |                             | 根据最后一次修改的时间排序                               |
+| -C     |                             | 按列列出条目                                             |
+|        | --color=when                | 何时使用颜色（总是，从不，自动）                         |
+| -d     | --directory                 | 列出目录条目而不是内容，不要废弃符号链接                 |
+| -F     | --classify                  | 向条目附加文件类型指示符                                 |
+|        | --file-type                 | 仅向某些文件类型（非可执行文件）附加文件类型指示符       |
+|        | --format=word               | 以交叉、逗号、水平、长、单列、详细、垂直等形式格式化输出 |
+| -g     |                             | 列出文件所有者以外的详细信息                             |
+|        | --group -directories -first | 在文件之前列出所有目录                                   |
+| -G     | --no -group                 | 在长列表中不显示组名称                                   |
+|        |                             |                                                          |
+|--------+-----------------------------+----------------------------------------------------------|
+
+entered on [2014-02-10 一]
+ 
+ [[file:~/org/gtd.org.gpg::*linux%E5%8F%8Alinux%E5%86%85%E6%A0%B8][linux及linux内核]]
+*** 2014-02-14 星期五
+**** Makefile(术语)
+规则：用于说明如何生成一个或多个目标文件，规则格式如下：
+targets:prerequisites
+    command
+目标 依赖 命令
+main.o:main.c
+    gcc -c main.c(首为tab)
+
+在makefile中，存在系统默认的自动化变量
+$^:代表所有的依赖文件
+$@:代表目标
+$<:代表第一个依赖的文件
+
+hello:main.o func1.o func2.o
+    gcc main.o func1.o func2.o - hello
+=>>
+hello:main.o func1.o func2.o
+    gcc $^ -o $@
+
+hello:hello.c
+    @gcc hello.c -o hell ;; 取消回显
+entered on [2014-02-14 五]
+ 
+ [[file:~/org/gtd.org.gpg::*c%E8%AF%AD%E8%A8%80][c语言]]
+

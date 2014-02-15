@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Feb  5 13:56:49 2014
+;; Created Sat Feb 15 13:04:27 2014
 ;; Desktop file format version 206
 ;; Emacs version 24.1.1
 
@@ -10,19 +10,19 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("M-" "C-" "inter" "&" "epa" ".emacs" "erp" "interactive" "gpg" "emacs" "todo" "aC" "d2x" "_(" "git"))
+(setq search-ring '("c-set" "c-set-style" "help" "tab-width" "tab-with" "tab-wi" "mem_" "weibo" "erc" "php" "copy" "jdp" "baidu" "global-set" "interactive" "ad-"))
 (setq regexp-search-ring '("&"))
-(setq register-alist (list '(48 "\221\243\250\221\234\364\251\373\221\243\251" "\221\243\250\221\266\376\221\243\251" "\221\243\250\221\310\375\221\243\251") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/.emacs" "~/org/finished.org" "~/org/study.org" "~/org/notes.org" "~/org/journal.org.gpg" "~/org/gtd.org.gpg" "~/.emacs.d/bookmarks" "~/myworks/README.md" "~/myworks/" "~/myworks/.git/config" "~/mytest/.git/config" "~/mytest" "~/myworks/.git/index" "~/myworks/.git/info/exclude" "~/myworks/.git/COMMIT_EDITMSG" "~/myworks/.git/description" "~/myworks/.git/ORIG_HEAD" "~/myworks/.git/HEAD" "~/myworks/.git/FETCH_HEAD" "~/myworks" "~/matlab-study/run_hs_1.sh" "~/matlab-study/.git/config" "~/bh_regulations/.git/config" "~/" "/var/webroot/.git/config" "/var/webroot" "/var/webroot/.git/COMMIT_EDITMSG" "/var/webroot/.git/ORIG_HEAD" "/var/webroot/.git/index" "/var/webroot/.git/HEAD"))
+(setq register-alist '((48 "\221\234\364\251\373\221\241\242" "\221\266\376\221\241\242")))
+(setq file-name-history '("~/.emacs.d/emacs.bak" "~/.emacs" "~/.emacs.d/bookmarks" "~/org/journal.org.gpg" "~/org/gtd.org.gpg" "~/mytest/linux0.11/fs/Makefile.am" "~/mytest/linux0.11/fs/configure.in" "~/Downloads/linux0.11/kernel/Makefile" "~/Documents/AutoMakefile.txt" "~/mytest/helloworld/Makefile.am" "~/mytest/helloworld/configure.in" "~/mytest/helloworld/" "~/mytest/helloworld/main.c" "~/org/study.org" "~/mytest/helloworld/helloworld.c" "~/mytest/helloworld/configure.scan" "~/bh_regulations/‘»ú‘¶¯‘²¿‘²É‘¹º‘¹Ü‘Àí‘°ì‘·¨.org" "~/Downloads/‘»ú‘¶¯‘²¿‘²É‘¹º‘¹Ü‘Àí‘°ì‘·¨.txt" "~/Downloads/" "~/bh_regulations/‘»ú‘¶¯‘²¿‘Éè‘±¸‘±¸‘¼þ‘²Ö‘´¢‘¹Ü‘Àí‘°ì‘·¨.org" "~/Downloads/‘»ú‘¶¯‘²¿‘Éè‘±¸‘±¸‘¼þ‘²Ö‘´¢‘¹Ü‘Àí‘°ì‘·¨.org" "~/Downloads/‘»ú‘¶¯‘²¿‘Éè‘±¸‘±¸‘¼þ‘²Ö‘´¢‘¹Ü‘Àí‘°ì‘·¨.txt" "~/.emacs.d/.git/config"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/jdp/.emacs"
-  ".emacs"
+  "/home/jdp/.emacs.d/emacs.bak"
+  "emacs.bak"
   'emacs-lisp-mode
   '(auto-complete-mode yas/minor-mode linum-mode)
-  457
-  '(97 nil)
+  1091
+  '(1091 nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
