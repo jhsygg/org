@@ -2,28 +2,17 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sat Feb 15 13:04:27 2014
+;; Created Fri Feb 21 23:38:01 2014
 ;; Desktop file format version 206
-;; Emacs version 24.1.1
+;; Emacs version 24.3.1
 
 ;; Global section:
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("c-set" "c-set-style" "help" "tab-width" "tab-with" "tab-wi" "mem_" "weibo" "erc" "php" "copy" "jdp" "baidu" "global-set" "interactive" "ad-"))
-(setq regexp-search-ring '("&"))
-(setq register-alist '((48 "\221\234\364\251\373\221\241\242" "\221\266\376\221\241\242")))
-(setq file-name-history '("~/.emacs.d/emacs.bak" "~/.emacs" "~/.emacs.d/bookmarks" "~/org/journal.org.gpg" "~/org/gtd.org.gpg" "~/mytest/linux0.11/fs/Makefile.am" "~/mytest/linux0.11/fs/configure.in" "~/Downloads/linux0.11/kernel/Makefile" "~/Documents/AutoMakefile.txt" "~/mytest/helloworld/Makefile.am" "~/mytest/helloworld/configure.in" "~/mytest/helloworld/" "~/mytest/helloworld/main.c" "~/org/study.org" "~/mytest/helloworld/helloworld.c" "~/mytest/helloworld/configure.scan" "~/bh_regulations/‘»ú‘¶¯‘²¿‘²É‘¹º‘¹Ü‘Àí‘°ì‘·¨.org" "~/Downloads/‘»ú‘¶¯‘²¿‘²É‘¹º‘¹Ü‘Àí‘°ì‘·¨.txt" "~/Downloads/" "~/bh_regulations/‘»ú‘¶¯‘²¿‘Éè‘±¸‘±¸‘¼þ‘²Ö‘´¢‘¹Ü‘Àí‘°ì‘·¨.org" "~/Downloads/‘»ú‘¶¯‘²¿‘Éè‘±¸‘±¸‘¼þ‘²Ö‘´¢‘¹Ü‘Àí‘°ì‘·¨.org" "~/Downloads/‘»ú‘¶¯‘²¿‘Éè‘±¸‘±¸‘¼þ‘²Ö‘´¢‘¹Ü‘Àí‘°ì‘·¨.txt" "~/.emacs.d/.git/config"))
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/org/"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 206
-  "/home/jdp/.emacs.d/emacs.bak"
-  "emacs.bak"
-  'emacs-lisp-mode
-  '(auto-complete-mode yas/minor-mode linum-mode)
-  1091
-  '(1091 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
-

@@ -3258,4 +3258,51 @@ hello:hello.c
 entered on [2014-02-14 五]
  
  [[file:~/org/gtd.org.gpg::*c%E8%AF%AD%E8%A8%80][c语言]]
+*** 2014-02-25 星期二
+**** Man-Pages 的主要内容
+|---+---------------+---------------|
+| 1 | naem          | 名称          |
+| 2 | synopsis      | 摘要          |
+| 3 | description   | 原型          |
+| 4 | return value  | 返回值        |
+| 5 | conforming to | 遵照标准      |
+| 6 | notes         | 提示          |
+| 7 | bugs          | 可能引起的bug |
+| 8 | see also      | 参考          |
+| 9 | colophon      | 版本信息      |
+|---+---------------+---------------|
+
+entered on [2014-02-25 二]
+ 
+ [[file:~/org/gtd.org.gpg::*linux%E5%8F%8Alinux%E5%86%85%E6%A0%B8][linux及linux内核]]
+**** gdb
+| run      | r |
+| break    | b |
+| continue | c |
+| display  | d |
+| info     | i |
+|          |   |
+entered on [2014-02-25 二]
+ 
+ [[file:~/org/gtd.org.gpg::*c%E8%AF%AD%E8%A8%80][c语言]]
+*** 2014-02-26 星期三
+**** 有关ls的命令
+| lsof  | list open files                                |
+| lshw  | list handware                                  |
+| lsmod | Show the status of modules in the Linux Kernel |
+| lspci | list all PCI dervices                          |
+|       |                                                |
+entered on [2014-02-26 三]
+ 
+ [[file:~/org/gtd.org.gpg::*linux%E5%8F%8Alinux%E5%86%85%E6%A0%B8][linux及linux内核]]
+** 2014-03 三月
+*** 2014-03-11 星期二
+**** 幂函数
+形如\(y=x^a\)(a为常数)的函数，即以底数为自变量，幂为因变量，指数为常量的函数称为幂函数。
+
+如\(y=x^2,y=x^-1\)
+
+entered on [2014-03-11 二]
+ 
+ [[file:~/org/gtd.org.gpg::*%E5%AF%8C%E5%85%B0%E5%85%8B%E6%9E%97%E7%9A%84%E5%8D%81%E4%B8%89%E7%A7%8D%E5%93%81%E5%BE%B7][富兰克林的十三种品德]]
 
