@@ -35,4 +35,8 @@
    - State "DONE"       from "SOMEDAY"    [2014-01-27 一 12:06]
    - State "DONE"       from "SOMEDAY"    [2014-01-26 日 07:11]
    <2014-01-26 日 8:00>--<2014-02-01 8:00>
+** DONE 参加员工金点子评选
+   CLOSED: [2014-04-14 一 07:07] SCHEDULED: <2014-04-11 五 13:00>
+   - State "DONE"       from "SOMEDAY"    [2014-04-14 一 07:07] \\
+     已经完成
 * Journals

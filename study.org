@@ -3305,4 +3305,47 @@ entered on [2014-02-26 三]
 entered on [2014-03-11 二]
  
  [[file:~/org/gtd.org.gpg::*%E5%AF%8C%E5%85%B0%E5%85%8B%E6%9E%97%E7%9A%84%E5%8D%81%E4%B8%89%E7%A7%8D%E5%93%81%E5%BE%B7][富兰克林的十三种品德]]
+** 2014-04 四月
+*** 2014-04-22 星期二
+**** gcc 的快速理解
 
+预编译: gcc -E -o hello.i hello.c
+        gcc -E hello.c -o hello.i
+
+预编译文件->目标文件        gcc -c hello.i -o hello.o
+
+目标文件->链接为执行文件 	gcc hello.o -o hello
+
+使用Make工具
+
+显示不符合标准的代码     gcc -pedantic hello.c -o hello
+
+产生警告信息      gcc -Wall hello.c -o hello
+
+优秀的linux程序员应该尽量避免产生警告信息，使自己的代码始终保持简洁、优美和健壮。
+
+-Werror 把警告当作错误来处理。gcc -Werror hello.c -o hello
+
+库依赖
+
+gcc hello.c -I /home/xiaowp/include -o hello
+
+gcc hello.c -L /home/xiaowp/lib -lhello -o hello
+
+动态链接库(通常以.so结尾)和静态链接库(通常以.s结尾)，两者的差别仅在程序执行时所需的代码是在运行时动态加载的，还是在编译时静态加载的。默认情况下，GCC在链接时优先使用动态链接库，只有当动态链接库不存在时才考虑使用静态链接库，如果需要的话可以在编译时加上-static选项，强制使用静态链接库。
+
+gcc foo.c -L /home/xiaowp/lib -static -lfoo -o foo
+
+代码优化
+
+gcc -Wall -O hello.c -o hello
+
+产生GDB可调试代码
+
+gcc -g hello.c -o hello
+
+gdb hello
+
+entered on [2014-04-22 二]
+ 
+ [[file:~/org/gtd.org.gpg::*c%E8%AF%AD%E8%A8%80][c语言]]
