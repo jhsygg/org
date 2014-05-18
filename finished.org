@@ -39,4 +39,3 @@
    CLOSED: [2014-04-14 一 07:07] SCHEDULED: <2014-04-11 五 13:00>
    - State "DONE"       from "SOMEDAY"    [2014-04-14 一 07:07] \\
      已经完成
-* Journals
