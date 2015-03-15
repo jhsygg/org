@@ -43,3 +43,7 @@
    CLOSED: [2014-07-02 三 16:21] SCHEDULED: <2014-07-02 三>
    - State "DONE"       from "SOMEDAY"    [2014-07-02 三 16:21] \\
      作为商业用途，还是需要第三方进行检验。
+** DONE 水泥年修
+   CLOSED: [2015-02-16 一 23:04] DEADLINE: <2015-02-16 一> SCHEDULED: <2015-01-16 五>
+   - State "DONE"       from "SOMEDAY"    [2015-02-16 一 23:04] \\
+     按时完成
