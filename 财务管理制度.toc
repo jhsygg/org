@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}总则}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}为了加强公司的财务工作，完善公司的财务管理，强化内部控制，规范财务管理流程，根据国家现行的有关财经法规、财务制度、政策结合本公司的实际情况，制定本制度。}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}财务管理的目标是追求企业价值最大化。}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}财务管理的职能是对企业经济活动进行记录、反映、预算、控制、决策。}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}财务管理的内容包括：}{3}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}资金管理，统一监控、调剂单位内部货币资金流动，提高资金使用率，掌握资金动态，为管理决策提供参谋。}{3}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}收支管理，按照财务管理制度规定的流程、标准和范围等，对涉及财务收支的经济业务实施规范管理。加强内部控制，推动预算管理。}{3}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}财产管理，对企业库存现金、存货、固定资产等的保存、管理、使用、处置进行规范，明确各环节责任，保证企业财产安全完整，并发挥应有效用。}{3}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}成本与费用管理，针对企业经营特点，以先进管理思想为指导，规范控制成本费用开支，为完善内部管理提供依据。}{3}{subsubsection.1.4.4}
+\contentsline {subsection}{\numberline {1.5}财务部门构架与职责}{3}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}财务总监的岗位职责}{3}{subsection.1.6}
+\contentsline {section}{\numberline {2}审批权限}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}公司的各项费用支出、采购种类物品的款项，由经办人部门经理（主管）审批、财务部部长核对、财务总监审批后，再由总经理批准后方可报销。}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}所有付款申请表连同真实完整合法的原始单据，上交财务部后（除供应商贷款外），报销审批支付时限为五个工作日。}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}固定资产、无形资产购置的审批权限：}{3}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}固定资产分类}{3}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}无形资产：包括电脑软件、专利权、非专利技术、土地使用权、特许权、商誉等。}{4}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}审批权限：经部门负责人审核后，财务总监审批后，再由总经理批准。}{4}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}费用报销审批程序：报销人员填写报销单 $\to $ 部门负责人审核真实、完整、无误 $\to $ 财务负责人审核单据、金额无误 $\to $ 财务总监、总经理批准 $\to $ 出纳付款。总经理报销的费用需要报总裁（或总裁授权人）批准。}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}没有按完整的审批程序执行，出纳应拒绝付款。如果审核（批）人员不在公司，通过邮件或微信审批的，应打印邮件或截图附后；口头或电话确认的，事后应及时补签。}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}财务部门负责人单据审核包括：}{4}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}报销单填写是否规范，内容是否填写完整、小写报销金额前是否有写￥、大写金额前是否有封 $\phi $}{4}{subsubsection.2.6.1}
+\contentsline {section}{\numberline {3}收支管理}{4}{section.3}
+\contentsline {section}{\numberline {4}财产管理}{4}{section.4}
+\contentsline {section}{\numberline {5}销售与收款业务管理}{4}{section.5}
+\contentsline {section}{\numberline {6}购货与付款业务管理}{4}{section.6}
+\contentsline {section}{\numberline {7}成本与费用管理}{4}{section.7}
+\contentsline {section}{\numberline {8}原始凭证与财务档案管理}{4}{section.8}
+\contentsline {section}{\numberline {9}财务责任追究制度}{4}{section.9}
+\contentsline {section}{\numberline {10}附则}{4}{section.10}

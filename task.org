@@ -1,6 +1,6 @@
 #+STARTUP: showall
 #+STARTUP: hidestars
-#+TAGS: { @Office(o) @Computer(c) @Home(h) @Call(C) @Why(w) @Lunchtime(l) }
+#+TAGS: { @Office(o) @Computer(c) @Home(h) @Call(C) @Way(w) @Lunchtime(l) }
 #+TAGS: 
 * Tasks
 :为了使各个分类项目的标题在日程表（Agenda View）1中显示，需要在项目名称下面写上“#+CATEGORY”。
