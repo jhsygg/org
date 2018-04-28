@@ -4,6 +4,38 @@
 * Tasks
 * Junrnal   SCHEDULED: <2017-11-27 一 ++1d>
 ** TODO 天气、日记						    :@Office:
+   - State "DONE"       from "TODO"       [2018-04-06 Fri 09:23] \\
+     what?
+   - State "DONE"       from "SOMEDAY"    [2018-04-06 Fri 08:37]
+   - State "TODO"       from ""           [2018-04-05 Thu 07:50]
+   - State "DONE"       from "SOMEDAY"    [2018-04-05 Thu 07:49] \\
+     为什么呢?
+   - State "TODO"       from ""           [2018-03-25 Sun 11:22]
+   - State "DONE"       from "SOMEDAY"    [2018-03-25 Sun 11:21] \\
+     是否是回来了.
+   - State "TODO"       from ""           [2018-03-20 Tue 22:03]
+   - State "DONE"       from "SOMEDAY"    [2018-03-20 Tue 22:03] \\
+     Coming my emacs.
+   :LOGBOOK:  
+   - State "NEXT"       from "DONE"       [2018-03-20 Tue 21:01]
+   - State "DONE"       from "NEXT"       [2018-03-20 Tue 21:01]
+   - State "NEXT"       from "DONE"       [2018-03-12 Mon 21:37]
+   - State "DONE"       from "NEXT"       [2018-03-12 Mon 21:37]
+   - State "NEXT"       from "DONE"       [2018-03-12 Mon 21:37]
+   - State "DONE"       from "PROJECT"    [2018-03-12 Mon 21:37]
+   - State "PROJECT"    from "DONE"       [2018-03-12 Mon 21:37]
+   - State "DONE"       from "PROJECT"    [2018-03-12 Mon 21:37]
+   - State "PROJECT"    from "DONE"       [2018-03-12 Mon 21:37]
+   - State "DONE"       from "PROJECT"    [2018-03-12 Mon 21:36]
+   - State "PROJECT"    from "DONE"       [2018-03-12 Mon 21:36]
+   - State "DONE"       from "PROJECT"    [2018-03-12 Mon 21:36]
+   - State "PROJECT"    from "DONE"       [2018-03-12 Mon 21:36]
+   - State "DONE"       from "PROJECT"    [2018-03-12 Mon 21:36]
+   - State "PROJECT"    from "DONE"       [2018-03-12 Mon 21:36]
+   - State "DONE"       from "PROJECT"    [2018-03-12 Mon 21:36]
+   - State "PROJECT"    from "DONE"       [2018-03-12 Mon 21:36]
+   - State "DONE"       from "NEXT"       [2018-03-12 Mon 21:36]
+   :END:      
    - State "DONE"       from "SOMEDAY"    [2017-11-26 日 09:58] \\
      今天，duolingo的熟悉度到了71%。昨天的新闻，174种商品进口官税从17.6下降到7.7%。
    - State "DONE"       from "SOMEDAY"    [2017-10-31 二 16:12] \\
